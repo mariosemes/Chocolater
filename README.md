@@ -28,11 +28,11 @@ As the generated script is a batch file, Microsoft defender will alert you and l
 ![Windows-Protection](https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/windows-protection.png "Windows-Protection")
 
 ------------
-If you have any ideas or wan't to contribute to the project, please join my Discord server:
-<br />[![Discord: https://discord.io/chocolater](https://img.shields.io/badge/Join_Discord-gray.svg?style=for-the-badge)](https://discord.io/chocolater)
-
-You favourite app is missing? Fill this out and and paste it on my Discord server:
+Your favourite app is missing? Fill this out and and paste it on my Discord server:
 
     App name: <app-name>
     Chocolatey URL: <url>
     Category: <category-name>
+    
+If you have any ideas or wan't to contribute to the project, please join my Discord server:
+<br />[![Discord: https://discord.io/chocolater](https://img.shields.io/badge/Join_Discord-gray.svg?style=for-the-badge)](https://discord.io/chocolater)
