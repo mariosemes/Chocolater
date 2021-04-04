@@ -21,10 +21,10 @@ or c/p the url in case you can't click on the button above:
 
 ------------
 ## Your favourite app is missing?
-Create a Issue using the "[App Request](https://github.com/mariosemes/Chocolater/issues/new?assignees=mariosemes&labels=App+Request&template=app-request.md&title=App+name "App Request")" template.
+Create an Issue using the "[App Request](https://github.com/mariosemes/Chocolater/issues/new?assignees=mariosemes&labels=App+Request&template=app-request.md&title=App+name "App Request")" template.
 
-If you have any ideas or wan't to contribute to the project, please join my [Discord server](https://discord.io/chocolater "Discord server").
+If you have any ideas or want to contribute to the project, please join my [Discord server](https://discord.io/chocolater "Discord server").
 
 ------------
 ### License
-This list is under the [GNU General Public License v3.0](https://github.com/mariosemes/Chocolater/blob/main/LICENSE "GNU General Public License v3.0") License.
+This script is under the [GNU General Public License v3.0](https://github.com/mariosemes/Chocolater/blob/main/LICENSE "GNU General Public License v3.0") License.
