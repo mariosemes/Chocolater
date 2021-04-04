@@ -1,6 +1,7 @@
 # Chocolater
 #### App Install Tool (v0.0.1)
 [![Discord: https://discord.io/chocolater](https://img.shields.io/badge/Discord-gray.svg?style=for-the-badge)](https://discord.io/chocolater)
+[![License: GPL 3](https://img.shields.io/badge/License-GPL%203-blue.svg?style=for-the-badge&colorB=177DC1&label=license)](LICENSE.md)
 
 Chocolater is simply a batch (.bat) script generator and it was conceived in order to facilitate the selection and installation of your favorite applications in one go.
 
