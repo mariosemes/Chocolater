@@ -1,4 +1,4 @@
-# Chocolater
+![Chocolater](https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/simple-logo.jpg "Chocolater")
 #### App Install Tool (v0.0.1)
 [![VISIT GENERATOR](https://img.shields.io/badge/Visit_Generator-blue.svg?style=for-the-badge)](https://rawcdn.githack.com/mariosemes/Chocolater/main/generator.html)
 [![Discord: https://discord.io/chocolater](https://img.shields.io/badge/Join_Discord-gray.svg?style=for-the-badge)](https://discord.io/chocolater)
