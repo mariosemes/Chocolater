@@ -1,14 +1,16 @@
 ---
 name: App Request
 about: Request an App
-title: APPREQ
+title: App name
 labels: App Request
 assignees: mariosemes
 
 ---
 
-###Please fill out this form:
+### Please fill out this form:
 
-App name: <app-name>
-Chocolatey URL: <url>
-Category: <category-name>
+**App name:** app-name-goes-here
+
+**Chocolatey URL:** url-goes-here
+
+**Category:** category-name-goes-here
