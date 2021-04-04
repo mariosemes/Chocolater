@@ -29,11 +29,8 @@ As the generated script is a batch file, Microsoft defender will alert you and l
 
 ------------
 ### Your favourite app is missing?
-Fill out this form and paste it on my Discord server:
-
-    App name: <app-name>
-    Chocolatey URL: <url>
-    Category: <category-name>
+Create a Issue using the "App Request" template.
+Link to the form: [App Request](https://github.com/mariosemes/Chocolater/issues/new?assignees=mariosemes&labels=App+Request&template=app-request.md&title=App+name "App Request")
 
 If you have any ideas or wan't to contribute to the project, please join my Discord server:
 <br />[![Discord: https://discord.io/chocolater](https://img.shields.io/badge/Join_Discord-gray.svg?style=for-the-badge)](https://discord.io/chocolater)
