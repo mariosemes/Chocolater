@@ -15,7 +15,8 @@ This is a Open Source project and we are not responsible in case of application 
 [![VISIT GENERATOR](https://img.shields.io/badge/Visit_Generator-gray.svg?style=for-the-badge)](https://rawcdn.githack.com/mariosemes/Chocolater/main/generator.html)
 
 or c/p the url in case you can't click on the button above:
-`https://rawcdn.githack.com/mariosemes/Chocolater/main/generator.html`
+
+    https://rawcdn.githack.com/mariosemes/Chocolater/main/generator.html
 
 ------------
 If you have any ideas or wan't to contribute to the project, please join my Discord server:
