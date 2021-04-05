@@ -16,7 +16,7 @@ This is a Open Source project and we are not responsible in case of application 
 
 or c/p the url in case you can't click on the button above:
 
-    https://rawcdn.githack.com/mariosemes/Chocolater/main/generator.html
+    https://raw.githack.com/mariosemes/Chocolater/main/generator.html
 
 
 ------------

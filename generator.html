@@ -25,6 +25,10 @@
             cursor: pointer;
             font-weight: 700;
         }
+        .form-check {
+            width: 220px;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
@@ -65,252 +69,272 @@
         </div>
 
         <form>
-            <div class="row">
-                <div class="col-sm">
+            <div class="d-flex align-content-start flex-wrap">
+                <div class="form-check">
                     <h3>Web browsers</h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="app" id="googlechrome" value="googlechrome">
-                        <label class="form-check-label" for="googlechrome"><img src="https://community.chocolatey.org/content/packageimages/GoogleChrome.89.0.4389.114.svg" width="16" height="16"> Google Chrome <a href="https://community.chocolatey.org/packages/GoogleChrome" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="firefox" value="firefox">
-                        <label class="form-check-label" for="firefox"><img src="https://community.chocolatey.org/content/packageimages/Firefox.87.0.svg" width="16" height="16"> Firefox <a href="https://community.chocolatey.org/packages/Firefox" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="googlechrome" value="googlechrome">
+                    <label class="form-check-label" for="googlechrome"><img src="https://community.chocolatey.org/content/packageimages/GoogleChrome.89.0.4389.114.svg" width="16" height="16"> Google Chrome <a href="https://community.chocolatey.org/packages/GoogleChrome" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="brave" value="brave">
-                        <label class="form-check-label" for="brave"><img src="https://community.chocolatey.org/content/packageimages/brave.1.22.71.svg" width="16" height="16"> Brave <a href="https://community.chocolatey.org/packages/brave/1.22.71" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="firefox" value="firefox">
+                    <label class="form-check-label" for="firefox"><img src="https://community.chocolatey.org/content/packageimages/Firefox.87.0.svg" width="16" height="16"> Firefox <a href="https://community.chocolatey.org/packages/Firefox" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="opera" value="opera">
-                        <label class="form-check-label" for="opera"><img src="https://community.chocolatey.org/content/packageimages/Opera.75.0.3969.149.svg" width="16" height="16"> Opera <a href="https://community.chocolatey.org/packages/Opera" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="brave" value="brave">
+                    <label class="form-check-label" for="brave"><img src="https://community.chocolatey.org/content/packageimages/brave.1.22.71.svg" width="16" height="16"> Brave <a href="https://community.chocolatey.org/packages/brave/1.22.71" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="microsoft-edge" value="microsoft-edge">
-                        <label class="form-check-label" for="microsoft-edge"><img src="https://community.chocolatey.org/content/packageimages/microsoft-edge.89.0.774.68.png" width="16" height="16"> Edge <a href="https://community.chocolatey.org/packages/microsoft-edge" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
-                    </div>
+                    <input class="form-check-input" type="checkbox" name="app" id="opera" value="opera">
+                    <label class="form-check-label" for="opera"><img src="https://community.chocolatey.org/content/packageimages/Opera.75.0.3969.149.svg" width="16" height="16"> Opera <a href="https://community.chocolatey.org/packages/Opera" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="microsoft-edge" value="microsoft-edge">
+                    <label class="form-check-label" for="microsoft-edge"><img src="https://community.chocolatey.org/content/packageimages/microsoft-edge.89.0.774.68.png" width="16" height="16"> Edge <a href="https://community.chocolatey.org/packages/microsoft-edge" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="vivaldi" value="vivaldi">
+                    <label class="form-check-label" for="vivaldi"><img src="https://community.chocolatey.org/content/packageimages/Vivaldi.3.7.2218.49.png" width="16" height="16"> Vivaldi <a href="https://community.chocolatey.org/packages/Vivaldi/3.7.2218.49" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="maxthon" value="maxthon">
+                    <label class="form-check-label" for="maxthon"><img src="https://community.chocolatey.org/content/packageimages/maxthon.4.9.4.1000.png" width="16" height="16"> Maxthon <a href="https://community.chocolatey.org/packages/maxthon" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="tor" value="tor-browser">
+                    <label class="form-check-label" for="tor"><img src="https://community.chocolatey.org/content/packageimages/tor-browser.10.0.15.png" width="16" height="16"> Tor Browser <a href="https://community.chocolatey.org/packages/tor-browser" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
                 </div>
-                <div class="col-sm">
+
+                <div class="form-check">
                     <h3>Documents</h3>
-                        <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="app" id="adobereader" value="adobereader">
-                        <label class="form-check-label" for="adobereader"><img src="https://community.chocolatey.org/content/packageimages/adobereader.2021.001.20145.png" width="16" height="16"> Adobe Acrobat Reader DC <a href="https://community.chocolatey.org/packages/adobereader" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="foxitreader" value="foxitreader">
-                        <label class="form-check-label" for="foxitreader"><img src="https://community.chocolatey.org/content/packageimages/FoxitReader.10.1.3.37598.png" width="16" height="16"> Foxit Reader <a href="https://community.chocolatey.org/packages/FoxitReader" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="adobereader" value="adobereader">
+                    <label class="form-check-label" for="adobereader"><img src="https://community.chocolatey.org/content/packageimages/adobereader.2021.001.20145.png" width="16" height="16"> Adobe Acrobat Reader DC <a href="https://community.chocolatey.org/packages/adobereader" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="cutepdf" value="cutepdf">
-                        <label class="form-check-label" for="cutepdf"><img src="https://community.chocolatey.org/content/packageimages/CutePDF.4.0.1.100.png" width="16" height="16"> CutePDF <a href="https://community.chocolatey.org/packages/CutePDF" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="foxitreader" value="foxitreader">
+                    <label class="form-check-label" for="foxitreader"><img src="https://community.chocolatey.org/content/packageimages/FoxitReader.10.1.3.37598.png" width="16" height="16"> Foxit Reader <a href="https://community.chocolatey.org/packages/FoxitReader" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="libreoffice-fresh" value="libreoffice-fresh">
-                        <label class="form-check-label" for="libreoffice-fresh"><img src="https://community.chocolatey.org/content/packageimages/libreoffice-fresh.7.1.1.svg" width="16" height="16"> LibreOffice <a href="https://community.chocolatey.org/packages/libreoffice-fresh" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="cutepdf" value="cutepdf">
+                    <label class="form-check-label" for="cutepdf"><img src="https://community.chocolatey.org/content/packageimages/CutePDF.4.0.1.100.png" width="16" height="16"> CutePDF <a href="https://community.chocolatey.org/packages/CutePDF" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="sumatrapdf" value="sumatrapdf">
-                        <label class="form-check-label" for="sumatrapdf"><img src="https://community.chocolatey.org/content/packageimages/sumatrapdf.3.2.png" width="16" height="16"> SumatraPDF <a href="https://community.chocolatey.org/packages/sumatrapdf" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
-                    </div>
+                    <input class="form-check-input" type="checkbox" name="app" id="libreoffice-fresh" value="libreoffice-fresh">
+                    <label class="form-check-label" for="libreoffice-fresh"><img src="https://community.chocolatey.org/content/packageimages/libreoffice-fresh.7.1.1.svg" width="16" height="16"> LibreOffice <a href="https://community.chocolatey.org/packages/libreoffice-fresh" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="sumatrapdf" value="sumatrapdf">
+                    <label class="form-check-label" for="sumatrapdf"><img src="https://community.chocolatey.org/content/packageimages/sumatrapdf.3.2.png" width="16" height="16"> SumatraPDF <a href="https://community.chocolatey.org/packages/sumatrapdf" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
                 </div>
-                <div class="col-sm">
+
+                <div class="form-check">
                     <h3>Voice & Chat</h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="app" id="discord" value="discord">
-                        <label class="form-check-label" for="discord"><img src="https://community.chocolatey.org/content/packageimages/discord.0.0.309.svg" width="16" height="16"> Discord <a href="https://community.chocolatey.org/packages/discord" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="skype" value="skype">
-                        <label class="form-check-label" for="skype"><img src="https://community.chocolatey.org/content/packageimages/skype.8.69.0.77.png" width="16" height="16"> Skype <a href="https://community.chocolatey.org/packages/skype" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="discord" value="discord">
+                    <label class="form-check-label" for="discord"><img src="https://community.chocolatey.org/content/packageimages/discord.0.0.309.svg" width="16" height="16"> Discord <a href="https://community.chocolatey.org/packages/discord" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="zoom" value="zoom">
-                        <label class="form-check-label" for="zoom"><img src="https://community.chocolatey.org/content/packageimages/zoom.5.6.0.589.png" width="16" height="16"> Zoom <a href="https://community.chocolatey.org/packages/zoom" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="skype" value="skype">
+                    <label class="form-check-label" for="skype"><img src="https://community.chocolatey.org/content/packageimages/skype.8.69.0.77.png" width="16" height="16"> Skype <a href="https://community.chocolatey.org/packages/skype" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="teamspeak" value="teamspeak">
-                        <label class="form-check-label" for="teamspeak"><img src="https://community.chocolatey.org/content/packageimages/teamspeak.3.5.6.png" width="16" height="16"> Teamspeak <a href="https://community.chocolatey.org/packages/teamspeak" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="zoom" value="zoom">
+                    <label class="form-check-label" for="zoom"><img src="https://community.chocolatey.org/content/packageimages/zoom.5.6.0.589.png" width="16" height="16"> Zoom <a href="https://community.chocolatey.org/packages/zoom" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="slack" value="slack">
-                        <label class="form-check-label" for="slack"><img src="https://community.chocolatey.org/content/packageimages/slack.4.14.0.png" width="16" height="16"> Slack <a href="https://community.chocolatey.org/packages/slack" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="teamspeak" value="teamspeak">
+                    <label class="form-check-label" for="teamspeak"><img src="https://community.chocolatey.org/content/packageimages/teamspeak.3.5.6.png" width="16" height="16"> Teamspeak <a href="https://community.chocolatey.org/packages/teamspeak" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="microsoft-teams" value="microsoft-teams.install">
-                        <label class="form-check-label" for="microsoft-teams"><img src="https://community.chocolatey.org/content/packageimages/microsoft-teams.1.4.00.7174.png" width="16" height="16"> Microsoft Teams <a href="https://community.chocolatey.org/packages/microsoft-teams" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
-                    </div>
+                    <input class="form-check-input" type="checkbox" name="app" id="slack" value="slack">
+                    <label class="form-check-label" for="slack"><img src="https://community.chocolatey.org/content/packageimages/slack.4.14.0.png" width="16" height="16"> Slack <a href="https://community.chocolatey.org/packages/slack" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="microsoft-teams" value="microsoft-teams.install">
+                    <label class="form-check-label" for="microsoft-teams"><img src="https://community.chocolatey.org/content/packageimages/microsoft-teams.1.4.00.7174.png" width="16" height="16"> Microsoft Teams <a href="https://community.chocolatey.org/packages/microsoft-teams" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="telegram" value="telegram">
+                    <label class="form-check-label" for="telegram"><img src="https://community.chocolatey.org/content/packageimages/telegram.2.7.1.png" width="16" height="16"> Telegram <a href="https://community.chocolatey.org/packages/telegram" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
                 </div>
-                <div class="col-sm">
+
+                <div class="form-check">
                     <h3>Media</h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="app" id="vlc" value="vlc">
-                        <label class="form-check-label" for="vlc"><img src="https://community.chocolatey.org/content/packageimages/vlc-skins.2017.01.13.png" width="16" height="16"> VLC Player <a href="https://community.chocolatey.org/packages/vlc" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="winamp" value="winamp">
-                        <label class="form-check-label" for="winamp"><img src="https://community.chocolatey.org/content/packageimages/winamp.5.666.png" width="16" height="16"> Winamp <a href="https://community.chocolatey.org/packages/winamp" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="vlc" value="vlc">
+                    <label class="form-check-label" for="vlc"><img src="https://community.chocolatey.org/content/packageimages/vlc-skins.2017.01.13.png" width="16" height="16"> VLC Player <a href="https://community.chocolatey.org/packages/vlc" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="spotify" value="spotify">
-                        <label class="form-check-label" for="spotify"><img src="https://community.chocolatey.org/content/packageimages/spotify.1.1.56.595.png" width="16" height="16"> Spotify <a href="https://community.chocolatey.org/packages/spotify" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="winamp" value="winamp">
+                    <label class="form-check-label" for="winamp"><img src="https://community.chocolatey.org/content/packageimages/winamp.5.666.png" width="16" height="16"> Winamp <a href="https://community.chocolatey.org/packages/winamp" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="mediamonkey" value="mediamonkey">
-                        <label class="form-check-label" for="mediamonkey"><img src="https://community.chocolatey.org/content/packageimages/mediamonkey.4.1.30.1914.png" width="16" height="16"> MediaMonkey <a href="https://community.chocolatey.org/packages/mediamonkey" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="spotify" value="spotify">
+                    <label class="form-check-label" for="spotify"><img src="https://community.chocolatey.org/content/packageimages/spotify.1.1.56.595.png" width="16" height="16"> Spotify <a href="https://community.chocolatey.org/packages/spotify" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="foobar2000" value="foobar2000">
-                        <label class="form-check-label" for="foobar2000"><img src="https://community.chocolatey.org/content/packageimages/foobar2000.1.6.4.20210213.png" width="16" height="16"> foobar2000 <a href="https://community.chocolatey.org/packages/foobar2000" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="mediamonkey" value="mediamonkey">
+                    <label class="form-check-label" for="mediamonkey"><img src="https://community.chocolatey.org/content/packageimages/mediamonkey.4.1.30.1914.png" width="16" height="16"> MediaMonkey <a href="https://community.chocolatey.org/packages/mediamonkey" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="itunes" value="itunes">
-                        <label class="form-check-label" for="itunes"><img src="https://community.chocolatey.org/content/packageimages/iTunes.12.11.0.26.png" width="16" height="16"> iTunes <a href="https://community.chocolatey.org/packages/iTunes" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
-                    </div>
+                    <input class="form-check-input" type="checkbox" name="app" id="foobar2000" value="foobar2000">
+                    <label class="form-check-label" for="foobar2000"><img src="https://community.chocolatey.org/content/packageimages/foobar2000.1.6.4.20210213.png" width="16" height="16"> foobar2000 <a href="https://community.chocolatey.org/packages/foobar2000" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="itunes" value="itunes">
+                    <label class="form-check-label" for="itunes"><img src="https://community.chocolatey.org/content/packageimages/iTunes.12.11.0.26.png" width="16" height="16"> iTunes <a href="https://community.chocolatey.org/packages/iTunes" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
                 </div>
-                <div class="col-sm">
-                    <h3>Image</h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="app" id="irfanview" value="irfanview">
-                        <label class="form-check-label" for="irfanview"><img src="https://community.chocolatey.org/content/packageimages/IrfanView.4.57.png" width="16" height="16"> IrfanView <a href="https://community.chocolatey.org/packages/IrfanView" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="greenshot" value="greenshot">
-                        <label class="form-check-label" for="greenshot"><img src="https://community.chocolatey.org/content/packageimages/greenshot.1.2.10.6.png" width="16" height="16"> Greenshot <a href="https://community.chocolatey.org/packages/greenshot" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                <div class="form-check">
+                    <h3>Photo & Image</h3>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="sharex" value="sharex">
-                        <label class="form-check-label" for="sharex"><img src="https://community.chocolatey.org/content/packageimages/sharex.13.4.0.png" width="16" height="16"> ShareX <a href="https://community.chocolatey.org/packages/sharex" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
-                    </div>
+                    <input class="form-check-input" type="checkbox" name="app" id="adobe-creative-cloud" value="adobe-creative-cloud">
+                    <label class="form-check-label" for="adobe-creative-cloud"><img src="https://community.chocolatey.org/Content/Images/packageDefaultIcon-50x50.png" width="16" height="16"> Adobe Creative Cloud <a href="https://community.chocolatey.org/packages/adobe-creative-cloud" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="figma" value="figma">
+                    <label class="form-check-label" for="figma"><img src="https://community.chocolatey.org/content/packageimages/figma.93.4.0.png" width="16" height="16"> IrfanView <a href="https://community.chocolatey.org/packages/figma" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="irfanview" value="irfanview">
+                    <label class="form-check-label" for="irfanview"><img src="https://community.chocolatey.org/content/packageimages/IrfanView.4.57.png" width="16" height="16"> IrfanView <a href="https://community.chocolatey.org/packages/IrfanView" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="greenshot" value="greenshot">
+                    <label class="form-check-label" for="greenshot"><img src="https://community.chocolatey.org/content/packageimages/greenshot.1.2.10.6.png" width="16" height="16"> Greenshot <a href="https://community.chocolatey.org/packages/greenshot" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="sharex" value="sharex">
+                    <label class="form-check-label" for="sharex"><img src="https://community.chocolatey.org/content/packageimages/sharex.13.4.0.png" width="16" height="16"> ShareX <a href="https://community.chocolatey.org/packages/sharex" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="gimp" value="gimp">
+                    <label class="form-check-label" for="gimp"><img src="https://community.chocolatey.org/content/packageimages/gimp.2.10.24.2.svg" width="16" height="16"> GIMP <a href="https://community.chocolatey.org/packages/gimp" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
                 </div>
-            </div>
-
-            <div class="row mt-5">
-                <div class="col-sm">
+                
+                <div class="form-check">
                     <h3>Display drivers</h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="app" id="nvidia-geforce-now" value="nvidia-geforce-now">
-                        <label class="form-check-label" for="nvidia-geforce-now"><img src="https://community.chocolatey.org/content/packageimages/nvidia-geforce-now.2.0.28.140.png" width="16" height="16"> NVIDIA GeForce Now <a href="https://community.chocolatey.org/packages/nvidia-geforce-now" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="nvidia-display-driver" value="nvidia-display-driver">
-                        <label class="form-check-label" for="nvidia-display-driver"><img src="https://community.chocolatey.org/content/packageimages/nvidia-display-driver.465.89.png" width="16" height="16"> NVIDIA Display Drivers <a href="https://community.chocolatey.org/packages/nvidia-display-driver" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
-                    </div>
+                    <input class="form-check-input" type="checkbox" name="app" id="nvidia-geforce-now" value="nvidia-geforce-now">
+                    <label class="form-check-label" for="nvidia-geforce-now"><img src="https://community.chocolatey.org/content/packageimages/nvidia-geforce-now.2.0.28.140.png" width="16" height="16"> NVIDIA GeForce Now <a href="https://community.chocolatey.org/packages/nvidia-geforce-now" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="nvidia-display-driver" value="nvidia-display-driver">
+                    <label class="form-check-label" for="nvidia-display-driver"><img src="https://community.chocolatey.org/content/packageimages/nvidia-display-driver.465.89.png" width="16" height="16"> NVIDIA Display Drivers <a href="https://community.chocolatey.org/packages/nvidia-display-driver" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
                 </div>
-                <div class="col-sm">
+
+                <div class="form-check">
                     <h3>File handling</h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="app" id="qbittorrent" value="qbittorrent">
-                        <label class="form-check-label" for="qbittorrent"><img src="https://community.chocolatey.org/content/packageimages/qbittorrent.4.3.4.1.png" width="16" height="16"> qBittorrent <a href="https://community.chocolatey.org/packages/qbittorrent" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="vuzeclient" value="vuzeclient">
-                        <label class="form-check-label" for="vuzeclient"><img src="https://community.chocolatey.org/content/packageimages/vuzeclient.1.11.1.png" width="16" height="16"> Vuze <a href="https://community.chocolatey.org/packages/vuzeclient" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="qbittorrent" value="qbittorrent">
+                    <label class="form-check-label" for="qbittorrent"><img src="https://community.chocolatey.org/content/packageimages/qbittorrent.4.3.4.1.png" width="16" height="16"> qBittorrent <a href="https://community.chocolatey.org/packages/qbittorrent" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="deluge" value="deluge">
-                        <label class="form-check-label" for="deluge"><img src="https://community.chocolatey.org/content/packageimages/deluge.1.3.15.svg" width="16" height="16"> Deluge <a href="https://community.chocolatey.org/packages/deluge" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
-                    </div>
+                    <input class="form-check-input" type="checkbox" name="app" id="vuzeclient" value="vuzeclient">
+                    <label class="form-check-label" for="vuzeclient"><img src="https://community.chocolatey.org/content/packageimages/vuzeclient.1.11.1.png" width="16" height="16"> Vuze <a href="https://community.chocolatey.org/packages/vuzeclient" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="deluge" value="deluge">
+                    <label class="form-check-label" for="deluge"><img src="https://community.chocolatey.org/content/packageimages/deluge.1.3.15.svg" width="16" height="16"> Deluge <a href="https://community.chocolatey.org/packages/deluge" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
                 </div>
-                <div class="col-sm">
+
+                <div class="form-check">
                     <h3>Compression</h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="app" id="7zip" value="7zip">
-                        <label class="form-check-label" for="7zip"><img src="https://community.chocolatey.org/content/packageimages/7zip.19.0.svg" width="16" height="16"> 7-Zip <a href="https://community.chocolatey.org/packages/7zip/19.0" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="winrar" value="winrar">
-                        <label class="form-check-label" for="winrar"><img src="https://community.chocolatey.org/content/packageimages/winrar.6.0.0.20210102.png" width="16" height="16"> WinRAR <a href="https://community.chocolatey.org/packages/winrar" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="7zip" value="7zip">
+                    <label class="form-check-label" for="7zip"><img src="https://community.chocolatey.org/content/packageimages/7zip.19.0.svg" width="16" height="16"> 7-Zip <a href="https://community.chocolatey.org/packages/7zip/19.0" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="peazip" value="peazip">
-                        <label class="form-check-label" for="peazip"><img src="https://community.chocolatey.org/content/packageimages/peazip.7.8.0.svg" width="16" height="16"> PeaZip <a href="https://community.chocolatey.org/packages/peazip" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
-                    </div>
+                    <input class="form-check-input" type="checkbox" name="app" id="winrar" value="winrar">
+                    <label class="form-check-label" for="winrar"><img src="https://community.chocolatey.org/content/packageimages/winrar.6.0.0.20210102.png" width="16" height="16"> WinRAR <a href="https://community.chocolatey.org/packages/winrar" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="peazip" value="peazip">
+                    <label class="form-check-label" for="peazip"><img src="https://community.chocolatey.org/content/packageimages/peazip.7.8.0.svg" width="16" height="16"> PeaZip <a href="https://community.chocolatey.org/packages/peazip" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
                 </div>
-                <div class="col-sm">
+
+                <div class="form-check">
                     <h3>Gaming</h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="app" id="steam-client" value="steam-client">
-                        <label class="form-check-label" for="steam-client"><img src="https://community.chocolatey.org/content/packageimages/steam-client.2.10.91.91.png" width="16" height="16"> Steam <a href="https://community.chocolatey.org/packages/steam-client" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="origin" value="origin">
-                        <label class="form-check-label" for="origin"><img src="https://community.chocolatey.org/content/packageimages/origin.10.5.96.47386.png" width="16" height="16"> Origin <a href="https://community.chocolatey.org/packages/origin" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="steam-client" value="steam-client">
+                    <label class="form-check-label" for="steam-client"><img src="https://community.chocolatey.org/content/packageimages/steam-client.2.10.91.91.png" width="16" height="16"> Steam <a href="https://community.chocolatey.org/packages/steam-client" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="goggalaxy" value="goggalaxy">
-                        <label class="form-check-label" for="goggalaxy"><img src="https://community.chocolatey.org/content/packageimages/goggalaxy.2.0.37.384.png" width="16" height="16"> GOG Galaxy <a href="https://community.chocolatey.org/packages/goggalaxy" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="origin" value="origin">
+                    <label class="form-check-label" for="origin"><img src="https://community.chocolatey.org/content/packageimages/origin.10.5.96.47386.png" width="16" height="16"> Origin <a href="https://community.chocolatey.org/packages/origin" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="epicgameslauncher" value="epicgameslauncher">
-                        <label class="form-check-label" for="epicgameslauncher"><img src="https://community.chocolatey.org/content/packageimages/epicgameslauncher.1.1.298.0.svg" width="16" height="16"> Epic Games <a href="https://community.chocolatey.org/packages/epicgameslauncher" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
-                    </div>
+                    <input class="form-check-input" type="checkbox" name="app" id="goggalaxy" value="goggalaxy">
+                    <label class="form-check-label" for="goggalaxy"><img src="https://community.chocolatey.org/content/packageimages/goggalaxy.2.0.37.384.png" width="16" height="16"> GOG Galaxy <a href="https://community.chocolatey.org/packages/goggalaxy" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="epicgameslauncher" value="epicgameslauncher">
+                    <label class="form-check-label" for="epicgameslauncher"><img src="https://community.chocolatey.org/content/packageimages/epicgameslauncher.1.1.298.0.svg" width="16" height="16"> Epic Games <a href="https://community.chocolatey.org/packages/epicgameslauncher" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
                 </div>
-                <div class="col-sm">
+
+                <div class="form-check">
                     <h3>Utilities</h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="app" id="speccy" value="speccy">
-                        <label class="form-check-label" for="speccy"><img src="https://community.chocolatey.org/content/packageimages/speccy.1.32.740.20200817.png" width="16" height="16"> Speccy <a href="https://community.chocolatey.org/packages/speccy" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="windirstat" value="windirstat">
-                        <label class="form-check-label" for="windirstat"><img src="https://community.chocolatey.org/content/packageimages/windirstat.1.1.2.20161210.svg" width="16" height="16"> WinDirStat <a href="https://community.chocolatey.org/packages/windirstat" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="speccy" value="speccy">
+                    <label class="form-check-label" for="speccy"><img src="https://community.chocolatey.org/content/packageimages/speccy.1.32.740.20200817.png" width="16" height="16"> Speccy <a href="https://community.chocolatey.org/packages/speccy" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="teracopy" value="teracopy">
-                        <label class="form-check-label" for="teracopy"><img src="https://community.chocolatey.org/content/packageimages/TeraCopy.3.7.png" width="16" height="16"> TeraCopy <a href="https://community.chocolatey.org/packages/TeraCopy" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
-                    </div>
+                    <input class="form-check-input" type="checkbox" name="app" id="windirstat" value="windirstat">
+                    <label class="form-check-label" for="windirstat"><img src="https://community.chocolatey.org/content/packageimages/windirstat.1.1.2.20161210.svg" width="16" height="16"> WinDirStat <a href="https://community.chocolatey.org/packages/windirstat" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="teracopy" value="teracopy">
+                    <label class="form-check-label" for="teracopy"><img src="https://community.chocolatey.org/content/packageimages/TeraCopy.3.7.png" width="16" height="16"> TeraCopy <a href="https://community.chocolatey.org/packages/TeraCopy" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="ccleaner" value="ccleaner">
+                    <label class="form-check-label" for="ccleaner"><img src="https://community.chocolatey.org/content/packageimages/ccleaner.5.78.8558.png" width="16" height="16"> CCleaner <a href="https://community.chocolatey.org/packages/ccleaner" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="teamviewer" value="teamviewer">
+                    <label class="form-check-label" for="teamviewer"><img src="https://community.chocolatey.org/content/packageimages/teamviewer9.9.0.38846.png" width="16" height="16"> Teamviewer <a href="https://community.chocolatey.org/packages/teamviewer9" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
                 </div>
-            </div>
 
-            <div class="row mt-5">
-                <div class="col-sm">
+                <div class="form-check">
                     <h3>Editors</h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="app" id="sublimetext2" value="sublimetext2">
-                        <label class="form-check-label" for="sublimetext2"><img src="https://community.chocolatey.org/content/packageimages/SublimeText2.app.2.0.1.22171.png" width="16" height="16"> Sublime Text 2 <a href="https://community.chocolatey.org/packages/sublimetext2" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="sublimetext3" value="sublimetext3.app">
-                        <label class="form-check-label" for="sublimetext3"><img src="https://community.chocolatey.org/content/packageimages/SublimeText2.app.2.0.1.22171.png" width="16" height="16"> Sublime Text 3 <a href="https://community.chocolatey.org/packages/SublimeText3.app" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="sublimetext2" value="sublimetext2">
+                    <label class="form-check-label" for="sublimetext2"><img src="https://community.chocolatey.org/content/packageimages/SublimeText2.app.2.0.1.22171.png" width="16" height="16"> Sublime Text 2 <a href="https://community.chocolatey.org/packages/sublimetext2" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="notepadplusplus" value="notepadplusplus.install">
-                        <label class="form-check-label" for="notepadplusplus"><img src="https://community.chocolatey.org/content/packageimages/notepadplusplus.7.9.5.png" width="16" height="16"> Notepad++ <a href="https://community.chocolatey.org/packages/notepadplusplus" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
-                    </div>
+                    <input class="form-check-input" type="checkbox" name="app" id="sublimetext3" value="sublimetext3.app">
+                    <label class="form-check-label" for="sublimetext3"><img src="https://community.chocolatey.org/content/packageimages/SublimeText2.app.2.0.1.22171.png" width="16" height="16"> Sublime Text 3 <a href="https://community.chocolatey.org/packages/SublimeText3.app" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="notepadplusplus" value="notepadplusplus.install">
+                    <label class="form-check-label" for="notepadplusplus"><img src="https://community.chocolatey.org/content/packageimages/notepadplusplus.7.9.5.png" width="16" height="16"> Notepad++ <a href="https://community.chocolatey.org/packages/notepadplusplus" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
                 </div>
-                <div class="col-sm">
+
+                <div class="form-check">
                     <h3>Cloud Storage</h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="app" id="google-backup-and-sync" value="google-backup-and-sync">
-                        <label class="form-check-label" for="google-backup-and-sync"><img src="https://community.chocolatey.org/content/packageimages/google-backup-and-sync.3.54.3529.0458.png" width="16" height="16"> Google Backup and Sync <a href="https://community.chocolatey.org/packages/google-backup-and-sync" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="googlephotos" value="googlephotos">
-                        <label class="form-check-label" for="googlephotos"><img src="https://community.chocolatey.org/content/packageimages/GooglePhotos.1.1.0.20150530.svg" width="16" height="16"> Google Photos Backup <a href="https://community.chocolatey.org/packages/GooglePhotos" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="google-backup-and-sync" value="google-backup-and-sync">
+                    <label class="form-check-label" for="google-backup-and-sync"><img src="https://community.chocolatey.org/content/packageimages/google-backup-and-sync.3.54.3529.0458.png" width="16" height="16"> Google Backup and Sync <a href="https://community.chocolatey.org/packages/google-backup-and-sync" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="onedrive" value="onedrive">
-                        <label class="form-check-label" for="onedrive"><img src="https://community.chocolatey.org/content/packageimages/onedrive.21.041.0228.0001.png" width="16" height="16"> Microsoft OneDrive <a href="https://community.chocolatey.org/packages/onedrive" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="googlephotos" value="googlephotos">
+                    <label class="form-check-label" for="googlephotos"><img src="https://community.chocolatey.org/content/packageimages/GooglePhotos.1.1.0.20150530.svg" width="16" height="16"> Google Photos Backup <a href="https://community.chocolatey.org/packages/GooglePhotos" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="dropbox" value="dropbox">
-                        <label class="form-check-label" for="dropbox"><img src="https://community.chocolatey.org/content/packageimages/dropbox.119.4.1772.svg" width="16" height="16"> Dropbox <a href="https://community.chocolatey.org/packages/dropbox/119.4.1772" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
-                    </div>
+                    <input class="form-check-input" type="checkbox" name="app" id="onedrive" value="onedrive">
+                    <label class="form-check-label" for="onedrive"><img src="https://community.chocolatey.org/content/packageimages/onedrive.21.041.0228.0001.png" width="16" height="16"> Microsoft OneDrive <a href="https://community.chocolatey.org/packages/onedrive" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="dropbox" value="dropbox">
+                    <label class="form-check-label" for="dropbox"><img src="https://community.chocolatey.org/content/packageimages/dropbox.119.4.1772.svg" width="16" height="16"> Dropbox <a href="https://community.chocolatey.org/packages/dropbox/119.4.1772" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
                 </div>
-                <div class="col-sm">
+
+                <div class="form-check">
                     <h3>Developer tools</h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="app" id="git" value="git.install">
-                        <label class="form-check-label" for="git"><img src="https://community.chocolatey.org/content/packageimages/git.2.31.1.svg" width="16" height="16"> Git <a href="https://community.chocolatey.org/packages/git" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="python" value="python">
-                        <label class="form-check-label" for="python"><img src="https://community.chocolatey.org/content/packageimages/python.3.9.2.svg" width="16" height="16"> Python 3.9+ <a href="https://community.chocolatey.org/packages/python/3.9.2" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="git" value="git.install">
+                    <label class="form-check-label" for="git"><img src="https://community.chocolatey.org/content/packageimages/git.2.31.1.svg" width="16" height="16"> Git <a href="https://community.chocolatey.org/packages/git" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="nodejs" value="nodejs.install">
-                        <label class="form-check-label" for="nodejs"><img src="https://community.chocolatey.org/content/packageimages/nodejs.15.13.0.png" width="16" height="16"> NodeJS <a href="https://community.chocolatey.org/packages/nodejs" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="python" value="python">
+                    <label class="form-check-label" for="python"><img src="https://community.chocolatey.org/content/packageimages/python.3.9.2.svg" width="16" height="16"> Python 3.9+ <a href="https://community.chocolatey.org/packages/python/3.9.2" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="putty" value="putty.install">
-                        <label class="form-check-label" for="putty"><img src="https://community.chocolatey.org/content/packageimages/putty.0.74.png" width="16" height="16"> PuTTY <a href="https://community.chocolatey.org/packages/putty" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="nodejs" value="nodejs.install">
+                    <label class="form-check-label" for="nodejs"><img src="https://community.chocolatey.org/content/packageimages/nodejs.15.13.0.png" width="16" height="16"> NodeJS <a href="https://community.chocolatey.org/packages/nodejs" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="winscp" value="winscp">
-                        <label class="form-check-label" for="winscp"><img src="https://community.chocolatey.org/content/packageimages/winscp.5.17.10.png" width="16" height="16"> WinSCP <a href="https://community.chocolatey.org/packages/winscp" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="putty" value="putty.install">
+                    <label class="form-check-label" for="putty"><img src="https://community.chocolatey.org/content/packageimages/putty.0.74.png" width="16" height="16"> PuTTY <a href="https://community.chocolatey.org/packages/putty" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="filezilla" value="filezilla">
-                        <label class="form-check-label" for="filezilla"><img src="https://community.chocolatey.org/content/packageimages/filezilla.3.53.1.svg" width="16" height="16"> FileZilla <a href="https://community.chocolatey.org/packages/filezilla" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="winscp" value="winscp">
+                    <label class="form-check-label" for="winscp"><img src="https://community.chocolatey.org/content/packageimages/winscp.5.17.10.png" width="16" height="16"> WinSCP <a href="https://community.chocolatey.org/packages/winscp" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="javaruntime" value="javaruntime">
-                        <label class="form-check-label" for="javaruntime"><img src="https://community.chocolatey.org/content/packageimages/javaruntime.8.0.231.svg" width="16" height="16"> Java Runtime JRE 8+ <a href="https://community.chocolatey.org/packages/javaruntime" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="filezilla" value="filezilla">
+                    <label class="form-check-label" for="filezilla"><img src="https://community.chocolatey.org/content/packageimages/filezilla.3.53.1.svg" width="16" height="16"> FileZilla <a href="https://community.chocolatey.org/packages/filezilla" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="jdk8" value="jdk8">
-                        <label class="form-check-label" for="jdk8"><img src="https://community.chocolatey.org/content/packageimages/javaruntime.8.0.231.svg" width="16" height="16"> Java SE 8+ <a href="https://community.chocolatey.org/packages/jdk8" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
-                    </div>
+                    <input class="form-check-input" type="checkbox" name="app" id="javaruntime" value="javaruntime">
+                    <label class="form-check-label" for="javaruntime"><img src="https://community.chocolatey.org/content/packageimages/javaruntime.8.0.231.svg" width="16" height="16"> Java Runtime JRE 8+ <a href="https://community.chocolatey.org/packages/javaruntime" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="jdk8" value="jdk8">
+                    <label class="form-check-label" for="jdk8"><img src="https://community.chocolatey.org/content/packageimages/javaruntime.8.0.231.svg" width="16" height="16"> Java SE 8+ <a href="https://community.chocolatey.org/packages/jdk8" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
                 </div>
-                <div class="col-sm">
-                    <h3>Utilities</h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="app" id="ccleaner" value="ccleaner">
-                        <label class="form-check-label" for="ccleaner"><img src="https://community.chocolatey.org/content/packageimages/ccleaner.5.78.8558.png" width="16" height="16"> CCleaner <a href="https://community.chocolatey.org/packages/ccleaner" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="teamviewer" value="teamviewer">
-                        <label class="form-check-label" for="teamviewer"><img src="https://community.chocolatey.org/content/packageimages/teamviewer9.9.0.38846.png" width="16" height="16"> Teamviewer <a href="https://community.chocolatey.org/packages/teamviewer9" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
-                    </div>
+                <div class="form-check">
+                    <h3>Recording & Streaming</h3>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="obs-studio" value="obs-studio">
+                    <label class="form-check-label" for="obs-studio"><img src="https://community.chocolatey.org/content/packageimages/obs-studio.26.1.1.png" width="16" height="16"> OBS Studio <a href="https://community.chocolatey.org/packages/obs-studio" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="streamlabs-obs" value="streamlabs-obs">
+                    <label class="form-check-label" for="streamlabs-obs"><img src="https://community.chocolatey.org/content/packageimages/streamlabs-obs.1.0.7.png" width="16" height="16"> Streamlabs OBS <a href="https://community.chocolatey.org/packages/streamlabs-obs" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
                 </div>
-                <div class="col-sm">
+
+                <div class="form-check">
                     <h3>Other</h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="app" id="thunderbird" value="thunderbird">
-                        <label class="form-check-label" for="thunderbird"><img src="https://community.chocolatey.org/content/packageimages/thunderbird.78.9.0.png" width="16" height="16"> Mozilla Thunderbird <a href="https://community.chocolatey.org/packages/thunderbird" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="k-litecodecpackfull" value="k-litecodecpackfull">
-                        <label class="form-check-label" for="k-litecodecpackfull"><img src="https://community.chocolatey.org/content/packageimages/k-litecodecpackfull.16.1.0.png" width="16" height="16"> K-Lite Codec Pack Full <a href="https://community.chocolatey.org/packages/k-litecodecpackfull" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                    <input class="form-check-input" type="checkbox" name="app" id="thunderbird" value="thunderbird">
+                    <label class="form-check-label" for="thunderbird"><img src="https://community.chocolatey.org/content/packageimages/thunderbird.78.9.0.png" width="16" height="16"> Mozilla Thunderbird <a href="https://community.chocolatey.org/packages/thunderbird" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
 
-                        <input class="form-check-input" type="checkbox" name="app" id="quicktime" value="quicktime">
-                        <label class="form-check-label" for="quicktime"><img src="https://community.chocolatey.org/content/packageimages/Quicktime.7.7.9.20161124.png" width="16" height="16"> Quicktime 7+ <a href="https://community.chocolatey.org/packages/Quicktime" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
-                    </div>
+                    <input class="form-check-input" type="checkbox" name="app" id="k-litecodecpackfull" value="k-litecodecpackfull">
+                    <label class="form-check-label" for="k-litecodecpackfull"><img src="https://community.chocolatey.org/content/packageimages/k-litecodecpackfull.16.1.0.png" width="16" height="16"> K-Lite Codec Pack Full <a href="https://community.chocolatey.org/packages/k-litecodecpackfull" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+
+                    <input class="form-check-input" type="checkbox" name="app" id="quicktime" value="quicktime">
+                    <label class="form-check-label" for="quicktime"><img src="https://community.chocolatey.org/content/packageimages/Quicktime.7.7.9.20161124.png" width="16" height="16"> Quicktime 7+ <a href="https://community.chocolatey.org/packages/Quicktime" target="_blank"><img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
                 </div>
             </div>
 
