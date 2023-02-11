@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Chocolater</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <style type="text/css">
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        h3 {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        h4 {
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+        .form-check-label {
+            font-weight: 400;
+            font-size: .8rem;
+        }
+        .form-check-label:hover {
+            cursor: pointer;
+            font-weight: 700;
+        }
+        .form-check {
+            width: 275px;
+            padding: 20px;
+        }
+        .chocoInst {color: red}
+        .imges {}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col">
+                <img src="https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/simple-logo.jpg">
+                <h4>Easy App Installer <a href="https://github.com/mariosemes/Chocolater" class="btn btn-dark" role="button">GitHub</a> <a href="https://discord.io/chocolater" class="btn btn-dark" role="button">Join Discord</a></h4>
+                <p> with Deezbec's progs and notes </p>
+                <hr/>
+            </div>       
+        </div>
+
+        <div class="row mt-5">
+            <div class="col">
+                <div data-toggle="buttons">
+                    <label class="btn btn-primary btn-lg">
+                        <input type="radio" name="UserSelection" autocomplete="off" id="UserSelection1" value="install" checked="checked"> Install
+                    </label>
+                    <label class="btn btn-danger btn-lg">
+                        <input type="radio" name="UserSelection" autocomplete="off" id="UserSelection2" value="uninstall"> Uninstall
+                    </label>
+                </div>
+            </div>       
+        </div>
+
+        <form>
+            <div class="d-flex align-content-start flex-wrap">
+                
+                   
+                <div class="form-check">
+                    <h3>Browser</h3>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="brave" value="brave">
+                   <label class="form-check-label" for="brave"><img src="https://community.chocolatey.org/content/packageimages/brave.1.46.153.svg" width="16" height="16"> Brave <a href="https://community.chocolatey.org/packages/brave" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="firefox" value="firefox">
+                   <label class="form-check-label" for="firefox"><img src="https://community.chocolatey.org/content/packageimages/firefox.109.0.1.svg" width="16" height="16"> Firefox <a href="https://community.chocolatey.org/packages/firefox" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="opera" value="opera">
+                   <label class="form-check-label" for="opera"><img src="https://community.chocolatey.org/content/packageimages/opera.95.0.4635.37.svg" width="16" height="16"> Opera <a href="https://community.chocolatey.org/packages/opera" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="opera-gx" value="opera-gx">
+                   <label class="form-check-label" for="opera-gx"><img src="https://community.chocolatey.org/content/packageimages/opera-gx.94.0.4606.96.png" width="16" height="16"> Opera-gx <a href="https://community.chocolatey.org/packages/opera-gx" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   </div> 
+                   
+                   <div class="form-check">
+                    <h3>Media</h3>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="potplayer" value="potplayer">
+                   <label class="form-check-label" for="potplayer"><img src="https://community.chocolatey.org/content/packageimages/potplayer.23.02.07.png" width="16" height="16"> potplayer <a href="https://community.chocolatey.org/packages/potplayer" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   </div> 
+                   
+                   <div class="form-check">
+                    <h3>Needed</h3>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="ventoy" value="ventoy">
+                   <label class="form-check-label" for="ventoy"><img src="https://community.chocolatey.org/content/packageimages/ventoy.1.0.88.png" width="16" height="16"> ventoy <a href="https://community.chocolatey.org/packages/ventoy" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="totalcommander" value="totalcommander">
+                   <label class="form-check-label" for="totalcommander"><img src="https://community.chocolatey.org/content/packageimages/totalcommander.10.51.png" width="16" height="16"> totalcommander <a href="https://community.chocolatey.org/packages/totalcommander" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="syncthing" value="syncthing">
+                   <label class="form-check-label" for="syncthing"><img src="https://community.chocolatey.org/content/packageimages/syncthing.1.23.1.png" width="16" height="16"> syncthing <a href="https://community.chocolatey.org/packages/syncthing" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="keepassxc" value="keepassxc">
+                   <label class="form-check-label" for="keepassxc"><img src="https://community.chocolatey.org/content/packageimages/keepassxc.2.7.4.svg" width="16" height="16"> keepassxc <a href="https://community.chocolatey.org/packages/keepassxc" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="backupper-standard" value="backupper-standard">
+                   <label class="form-check-label" for="backupper-standard"><img src="https://community.chocolatey.org/content/packageimages/backupper-standard.7.1.2.png" width="16" height="16"> backupper-standard <a href="https://community.chocolatey.org/packages/backupper-standard" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="everything" value="everything">
+                   <label class="form-check-label" for="everything"><img src="https://community.chocolatey.org/content/packageimages/everything.1.4.11022.png" width="16" height="16"> everything <a href="https://community.chocolatey.org/packages/everything" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="geforce-experience" value="geforce-experience">
+                   <label class="form-check-label" for="geforce-experience"><img src="https://community.chocolatey.org/content/packageimages/geforce-experience.3.27.0.112.png" width="16" height="16"> geforce-experience <a href="https://community.chocolatey.org/packages/geforce-experience" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="geforce-game-ready-driver" value="geforce-game-ready-driver">
+                   <label class="form-check-label" for="geforce-game-ready-driver"><img src="https://community.chocolatey.org/content/packageimages/geforce-game-ready-driver.528.49.png" width="16" height="16"> geforce-game-ready-driver <a href="https://community.chocolatey.org/packages/geforce-game-ready-driver" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="hwinfo" value="hwinfo">
+                   <label class="form-check-label" for="hwinfo"><img src="https://community.chocolatey.org/content/packageimages/hwinfo.7.36.png" width="16" height="16"> hwinfo <a href="https://community.chocolatey.org/packages/hwinfo" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="freedownloadmanager" value="freedownloadmanager">
+                   <label class="form-check-label" for="freedownloadmanager"><img src="https://community.chocolatey.org/content/packageimages/freedownloadmanager.6.18.1.png" width="16" height="16"> freedownloadmanager <a href="https://community.chocolatey.org/packages/freedownloadmanager" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="wacom-drivers" value="wacom-drivers">
+                   <label class="form-check-label" for="wacom-drivers"><img src="https://community.chocolatey.org/content/packageimages/wacom-drivers.6.4.1.3.png" width="16" height="16"> wacom-drivers <a href="https://community.chocolatey.org/packages/wacom-drivers" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="wiztree" value="wiztree">
+                   <label class="form-check-label" for="wiztree"><img src="https://community.chocolatey.org/content/packageimages/wiztree.4.12.png" width="16" height="16"> wiztree <a href="https://community.chocolatey.org/packages/wiztree" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   </div> 
+                   
+                   <div class="form-check">
+                    <h3>Cool Stuff</h3>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="vmware-workstation-player" value="vmware-workstation-player">
+                   <label class="form-check-label" for="vmware-workstation-player"><img src="https://community.chocolatey.org/content/packageimages/vmware-workstation-player.17.0.1.21139696.png" width="16" height="16"> vmware-workstation-player <a href="https://community.chocolatey.org/packages/vmware-workstation-player" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="notepadplusplus" value="notepadplusplus">
+                   <label class="form-check-label" for="notepadplusplus"><img src="https://community.chocolatey.org/content/packageimages/notepadplusplus.8.4.9.png" width="16" height="16"> notepad++ <a href="https://community.chocolatey.org/packages/notepadplusplus" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="autoruns" value="autoruns">
+                   <label class="form-check-label" for="autoruns"><img src="https://community.chocolatey.org/content/packageimages/autoruns.14.09.png" width="16" height="16"> autoruns <a href="https://community.chocolatey.org/packages/autoruns" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="chocolateygui" value="chocolateygui">
+                   <label class="form-check-label" for="chocolateygui"><img src="https://community.chocolatey.org/content/packageimages/chocolateygui.1.1.1.png" width="16" height="16"> chocolateygui <a href="https://community.chocolatey.org/packages/chocolateygui" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="crystaldiskinfo.portable" value="crystaldiskinfo.portable">
+                   <label class="form-check-label" for="crystaldiskinfo.portable"><img src="https://community.chocolatey.org/content/packageimages/crystaldiskinfo.portable.8.17.14.png" width="16" height="16"> crystaldiskinfo.portable <a href="https://community.chocolatey.org/packages/crystaldiskinfo.portable" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="dell-update" value="dell-update">
+                   <label class="form-check-label" for="dell-update"><img src="https://community.chocolatey.org/content/packageimages/dell-update.4.7.1.png" width="16" height="16"> dell-update <a href="https://community.chocolatey.org/packages/dell-update" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="ds4windows" value="ds4windows">
+                   <label class="form-check-label" for="ds4windows"><img src="https://community.chocolatey.org/content/packageimages/ds4windows.3.2.8.png" width="16" height="16"> ds4windows <a href="https://community.chocolatey.org/packages/ds4windows" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   </div> 
+                   
+                   <div class="form-check">
+                    <h3>Games</h3>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="ds4windows" value="ds4windows">
+                   <label class="form-check-label" for="ds4windows"><img src="https://community.chocolatey.org/content/packageimages/ds4windows.3.2.8.png" width="16" height="16"> ds4windows <a href="https://community.chocolatey.org/packages/ds4windows" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="steam" value="steam">
+                   <label class="form-check-label" for="steam"><img src="https://community.chocolatey.org/content/packageimages/steam.2.10.91.91221129.png" width="16" height="16"> steam <a href="https://community.chocolatey.org/packages/steam" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="epicgameslauncher" value="epicgameslauncher">
+                   <label class="form-check-label" for="epicgameslauncher"><img src="https://community.chocolatey.org/content/packageimages/epicgameslauncher.1.3.51.0.png" width="16" height="16"> epicgameslauncher <a href="https://community.chocolatey.org/packages/epicgameslauncher" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="ubisoft-connect" value="ubisoft-connect">
+                   <label class="form-check-label" for="ubisoft-connect"><img src="https://community.chocolatey.org/content/packageimages/ubisoft-connect.138.2.0.10815.png" width="16" height="16"> ubisoft-connect <a href="https://community.chocolatey.org/packages/ubisoft-connect" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="uplay" value="uplay">
+                   <label class="form-check-label" for="uplay"><img src="https://community.chocolatey.org/content/packageimages/uplay.120.0.0.20210324.svg" width="16" height="16"> uplay <a href="https://community.chocolatey.org/packages/uplay" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="valorant" value="valorant">
+                   <label class="form-check-label" for="valorant"><img src="https://community.chocolatey.org/content/packageimages/valorant.62.0.4.4878570.png" width="16" height="16"> valorant <a href="https://community.chocolatey.org/packages/valorant" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   </div> 
+                   
+                   <div class="form-check">
+                    <h3>Social</h3>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="discord" value="discord">
+                   <label class="form-check-label" for="discord"><img src="https://community.chocolatey.org/content/packageimages/discord.1.0.9005.svg" width="16" height="16"> discord <a href="https://community.chocolatey.org/packages/discord" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="skype" value="skype">
+                   <label class="form-check-label" for="skype"><img src="https://community.chocolatey.org/content/packageimages/skype.8.93.0.406.png" width="16" height="16"> skype <a href="https://community.chocolatey.org/packages/skype" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="telegram" value="telegram">
+                   <label class="form-check-label" for="telegram"><img src="https://community.chocolatey.org/content/packageimages/telegram.4.6.2.png" width="16" height="16"> telegram <a href="https://community.chocolatey.org/packages/telegram" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   </div> 
+                   
+                   <div class="form-check">
+                    <h3>Media</h3>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="irfanview" value="irfanview">
+                   <label class="form-check-label" for="irfanview"><img src="https://community.chocolatey.org/content/packageimages/irfanview.4.62.png" width="16" height="16"> irfanview <a href="https://community.chocolatey.org/packages/irfanview" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="imageglass" value="imageglass">
+                   <label class="form-check-label" for="imageglass"><img src="https://community.chocolatey.org/content/packageimages/imageglass.8.7.11.6.svg" width="16" height="16"> Image glass <a href="https://community.chocolatey.org/packages/imageglass" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   </div> 
+                   
+                   <div class="form-check">
+                    <h3>prog</h3>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="pycharm-community" value="pycharm-community">
+                   <label class="form-check-label" for="pycharm-community"><img src="https://community.chocolatey.org/content/packageimages/pycharm-community.2022.3.2.png" width="16" height="16"> pycharm-community <a href="https://community.chocolatey.org/packages/pycharm-community" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="python" value="python">
+                   <label class="form-check-label" for="python"><img src="https://community.chocolatey.org/content/packageimages/python.3.11.0.svg" width="16" height="16"> python <a href="https://community.chocolatey.org/packages/python" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   </div> 
+                   
+                   <div class="form-check">
+                    <h3>NotSure</h3>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="praat" value="praat">
+                   <label class="form-check-label" for="praat"><img src="https://community.chocolatey.org/content/packageimages/praat.6.3.03.png" width="16" height="16"> praat <a href="https://community.chocolatey.org/packages/praat" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   
+                   <input class="form-check-input" type="checkbox" name="app" id="wacom-drivers" value="wacom-drivers">
+                   <label class="form-check-label" for="wacom-drivers"><img src="https://community.chocolatey.org/content/packageimages/wacom-drivers.6.4.1.3.png" width="16" height="16"> wacom-drivers <a href="https://community.chocolatey.org/packages/wacom-drivers" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg" width="16" height="16"></a></label><br>
+                   </div> 
+                       
+            </div>
+
+            <div class="row mt-5">
+                <div class="col">
+                    <input type="button" id="saveButton" name="saveButton" class="btn btn-success btn-lg btn-block" value="Generate code" onclick="saveBat()" />
+                </div>
+            </div>
+        </form>
+
+        <div class="row mt-5">
+            <div class="col">
+                <h2>Usage:</h2>
+                <ul class="list-group">
+                
+                    <li class="list-group-item">1. Run PowerShell as Administrator</li>
+                    <li class="list-group-item">2. Install choco by running <button type="button" id="copy-to-clip" class="btn btn-primary btn-sm" onclick="CopyToClipboard('chocoInst')">Copy code to Clipboard</button></li>
+                    <li class="list-group-item bg-light"><code id="chocoInst">Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))</code></li>
+                    <li class="list-group-item">3. Copy the Code <button type="button" id="copy-to-clip" class="btn btn-primary btn-sm" onclick="CopyToClipboard('windows')">Copy code to Clipboard</button></li>
+                    <li class="list-group-item bg-light"><code id="windows">Code will show up here after you generate it.</code></li>
+                    <li class="list-group-item">4. Paste the Code into PowerShell and press Enter(*)</li>
+                    <li class="list-group-item">5. Now sit, relax and watch it work for you.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row mt-5 mb-5">
+            <div class="col">
+                <p>* By using the script, you agree to use the Chocolatey Software Management Tool and all associated applications at your own risk.
+                    <h4> Main PC build </h4>
+                    choco install totalcommander opera opera-gx firefox discord telegram skype potplayer wacom-drivers irfanview wiztree chocolateygui keepassxc pycharm-community python steam epicgameslauncher autoruns ventoy hwinfo everything -y<br><br>
+
+<h4> Other cool progs </h4>
+<br>kaspersky security cloud
+<br>bleachbit -- choco
+<br>glary utilities 
+<br>
+<br>
+<br>
+<br>darktable gimp inkscape krita - фоторедактор
+<br>kdenlive olive openshot - видередактор
+<br>lmms - создание музыки
+<br>scribus sublime text  - верстка
+<br>thunder bird - почта
+<br>only office - office
+<br>
+<br>
+<br>Using not categor
+<br>* Browser - Brave, opera gx
+<br>* AntiVir - Kaspersky Security Cloud Free
+<br>* chocolatey - быстрая установка приложений
+<br>* Keepass - хранение паролей, пользуюсь лаунчером KeepassXC, для телефона - KeePassDX
+<br>  * Расширения:
+<br>    * keeotp2 - TOTP double-auth
+<br>    * KP2faChecker
+<br>    * keeAnywhere
+<br>    * KPEnhancedEntryView
+<br>* Torrent - FreeDownloadManager
+<br>* VPN - Aman vpn (Marty files edition), PrivadoVPN - 10GB free 
+<br>* Backup - Aomei
+<br>* Files - total commander, wiztree
+<br>* Revo uninstall - удаление приложений
+<br>
+<br>
+<br>
+<br>Media-view&edit:
+<br>* LosslessCut - изичное обрезка видео
+<br>* reaper - обработка видео более детальная
+<br>* potplayer - просмотр видео
+<br>* irfanview, imageGlass - просмотр фото
+<br>
+<br>
+<br>Games & Entertainment:
+<br>* ds4windows - для геймпадов play station
+<br>* Outplayed - запись реплеев игр
+<br>
+<br>
+<br>Optimisation and Win stuff:
+<br>
+<br>* Nvidia
+<br>   * NVCleanstall
+<br>   * profile inspector
+<br>   * DDU - display driver uninstaller
+<br>
+<br>* START-UP:
+<br>  * DisableWinTracking
+<br>  * EdgeBlock
+<br>  * Defender control
+<br>
+<br>* Tweakers:
+<br>  * win10 tweaker
+<br>  * Winaero
+<br>  * privatezilla
+<br>  * Booster X (скачивал в дискорде, найти на ютубе)
+<br>  * OOSU10
+<br>  * reg organiser
+<br>  * Dism++
+<br>  * Ultimate win tweaker (????)
+<br>
+<br>* Check PC specs:
+<br>  * hwinfo - узнать параметры ПК, проверить датчики
+<br>  * cpu-z
+<br>Стоит сравнить их всех и выбрать наилучший
+<br>
+<br>* ISLC - чистка списка ожидания в оперативной памяти
+<br>* ventoy - создание супер загрузочной флешки, использую bigsur тему
+<br>* autoruns - проверка почти всех мест автозагрузки
+<br>* everything - поиск файлов
+<br>* crystaldiskinfo - проверка работоспособности дисков
+<br>* vmware-workstation - Виртуальные машины
+<br>* throttlestop - возможно из-за него я сломал ноут DELL
+<br>* syncthing - синхронизация файлов 
+<br>* dell-update - для ноутов dell
+<br>* disk drill - восстоновление удаленных файлов
+<br>---------------------не пользуюсь но может понадобится---------------------
+<br>* nirsoft - вряд ли разберусь, но что-то полезное там есть
+<br>* processlasso
+<br>* picpick - мультитул для пк
+<br>* easy services optimizer
+<br>* firework - сайты в приложения
+<br>* T-clock - изменение часов в строке состояния win10
+<br>* Unlocker - получить доступ к закрытым файлам
+<br>* minitool partition wizard - тоже восстоновление файловё
+<br>* hand brake - compress videos
+<br>* kodi - синхронизированный кинотеатр
+<br>
+<br>
+<br>* Steam cleaner
+<br>* Discord cache cleaner
+<br>* Temp cleaner
+<br>* Eraser
+<br>* ISLC intellgent standby list cleaner
+<br>
+<br>
+<br>
+<br>
+<br>_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_Android_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+<br>
+<br>
+<br>* PC debugging:
+<br>   * adb app control
+<br>   * xiaomi adb fastboot tool
+
+<h4> Gonna add to generator </h4>
+
+<br>firefox
+<br>autoruns
+<br>backupper-standard
+<br>chocolateygui
+<br>crystaldiskinfo.portable
+<br>dell-update
+<br>discord
+<br>ds4windows
+<br>epicgameslauncher
+<br>everything
+<br>firefox
+<br>freedownloadmanager
+<br>geforce-experience
+<br>geforce-game-ready-driver
+<br>hwinfo
+<br>irfanview
+<br>keepassxc
+<br>notepad++
+<br>opera
+<br>opera-gx
+<br>potplayer
+<br>praat
+<br>pycharm-community
+<br>python
+<br>skype
+<br>steam
+<br>syncthing
+<br>telegram
+<br>throttlestop
+<br>totalcommander
+<br>ubisoft-connect
+<br>uplay
+<br>valorant
+<br>ventoy
+<br>vmware-workstation-player
+<br>wacom-drivers
+<br>wiztree
+                </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    function saveBat() {
+        var radios = document.getElementsByName('UserSelection');
+        for (var i = 0, length = radios.length; i < length; i++) {
+          if (radios[i].checked) {
+            user_selection = radios[i].value;
+            break;
+          }
+        }
+
+        var app = document.forms[0];
+        var app_list = "";
+        var i;
+        for (i = 0; i < app.length; i++) {
+            if (app[i].checked) {
+              app_list = app_list + app[i].value + " ";
+            }
+        }        
+
+        var windows_line = 'choco ' + user_selection + ' ' + app_list + '-y ';
+
+        if (app_list) {
+            document.getElementById('windows').innerHTML = windows_line;
+        } else {
+            document.getElementById('windows').innerHTML = "No apps selected. Please choose your apps to create your installation code.";
+        }
+    }
+
+    function CopyToClipboard (containerid) {
+      const textarea = document.createElement('textarea')
+      textarea.id = 'temp_element'
+      textarea.style.height = 0
+      document.body.appendChild(textarea)
+      textarea.value = document.getElementById(containerid).innerText
+      const selector = document.querySelector('#temp_element')
+      selector.select()
+      document.execCommand('copy')
+      document.body.removeChild(textarea)
+    }
+
+</script>
+</html>

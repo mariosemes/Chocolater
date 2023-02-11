@@ -1,0 +1,109 @@
+kaspersky security cloud
+bleachbit -- choco
+glary utilities 
+
+
+
+darktable gimp inkscape krita - фоторедактор
+kdenlive olive openshot - видередактор
+lmms - создание музыки
+scribus sublime text  - верстка
+thunder bird - почта
+only office - office
+
+
+Using not categor
+* Browser - Brave, opera gx
+* AntiVir - Kaspersky Security Cloud Free
+* chocolatey - быстрая установка приложений
+* Keepass - хранение паролей, пользуюсь лаунчером KeepassXC, для телефона - KeePassDX
+  * Расширения:
+    * keeotp2 - TOTP double-auth
+    * KP2faChecker
+    * keeAnywhere
+    * KPEnhancedEntryView
+* Torrent - FreeDownloadManager
+* VPN - Aman vpn (Marty files edition), PrivadoVPN - 10GB free 
+* Backup - Aomei
+* Files - total commander, wiztree
+* Revo uninstall - удаление приложений
+
+
+
+Media-view&edit:
+* LosslessCut - изичное обрезка видео
+* reaper - обработка видео более детальная
+* potplayer - просмотр видео
+* irfanview, imageGlass - просмотр фото
+
+
+Games & Entertainment:
+* ds4windows - для геймпадов play station
+* Outplayed - запись реплеев игр
+
+
+Optimisation and Win stuff:
+
+* Nvidia
+   * NVCleanstall
+   * profile inspector
+   * DDU - display driver uninstaller
+
+* START-UP:
+  * DisableWinTracking
+  * EdgeBlock
+  * Defender control
+
+* Tweakers:
+  * win10 tweaker
+  * Winaero
+  * privatezilla
+  * Booster X (скачивал в дискорде, найти на ютубе)
+  * OOSU10
+  * reg organiser
+  * Dism++
+  * Ultimate win tweaker (????)
+
+* Check PC specs:
+  * hwinfo - узнать параметры ПК, проверить датчики
+  * cpu-z
+Стоит сравнить их всех и выбрать наилучший
+
+* ISLC - чистка списка ожидания в оперативной памяти
+* ventoy - создание супер загрузочной флешки, использую bigsur тему
+* autoruns - проверка почти всех мест автозагрузки
+* everything - поиск файлов
+* crystaldiskinfo - проверка работоспособности дисков
+* vmware-workstation - Виртуальные машины
+* throttlestop - возможно из-за него я сломал ноут DELL
+* syncthing - синхронизация файлов 
+* dell-update - для ноутов dell
+* disk drill - восстоновление удаленных файлов
+---------------------не пользуюсь но может понадобится---------------------
+* nirsoft - вряд ли разберусь, но что-то полезное там есть
+* processlasso
+* picpick - мультитул для пк
+* easy services optimizer
+* firework - сайты в приложения
+* T-clock - изменение часов в строке состояния win10
+* Unlocker - получить доступ к закрытым файлам
+* minitool partition wizard - тоже восстоновление файловё
+* hand brake - compress videos
+* kodi - синхронизированный кинотеатр
+
+
+* Steam cleaner
+* Discord cache cleaner
+* Temp cleaner
+* Eraser
+* ISLC intellgent standby list cleaner
+
+
+
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_Android_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+
+* PC debugging:
+   * adb app control
+   * xiaomi adb fastboot tool

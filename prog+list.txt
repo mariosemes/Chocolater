@@ -1,0 +1,56 @@
+-Browser
+Brave _ brave _ svg
+Firefox _ firefox _ svg
+Opera _ opera _ svg
+Opera-gx _ opera-gx
+
+-Media
+potplayer _ potplayer
+
+-Needed
+ventoy _ ventoy
+totalcommander _ totalcommander
+syncthing _ syncthing
+keepassxc _ keepassxc _ svg
+backupper-standard _ backupper-standard
+everything _ everything
+geforce-experience _ geforce-experience
+geforce-game-ready-driver _ geforce-game-ready-driver
+hwinfo _ hwinfo
+freedownloadmanager _ freedownloadmanager
+wacom-drivers _ wacom-drivers
+wiztree _ wiztree
+
+-Cool Stuff
+vmware-workstation-player _ vmware-workstation-player
+notepad++ _ notepadplusplus _ svg
+autoruns _ autoruns
+chocolateygui _ chocolateygui
+crystaldiskinfo.portable _ crystaldiskinfo.portable
+dell-update _ dell-update
+ds4windows _ ds4windows
+
+-Games
+ds4windows _ ds4windows
+steam _ steam
+epicgameslauncher _ epicgameslauncher
+ubisoft-connect _ ubisoft-connect
+uplay _ uplay _ svg
+valorant _ valorant
+-Social
+discord _ discord _ svg
+skype _ skype
+telegram _ telegram
+
+-Media
+irfanview _ irfanview
+Image glass _ imageglass _ svg
+
+-prog
+pycharm-community _ pycharm-community
+python _ python _ svg
+
+-NotSure
+praat _ praat
+wacom-drivers _ wacom-drivers
+
