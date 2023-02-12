@@ -7,14 +7,13 @@ dir = os.path.abspath(os.curdir)
 html_file = "generator.html"
 list_name = "list.txt"
 #User info
-input_text = input(print('Write hmtl file name (example: generator.html): '))
+input_text = input(print('Write hmtl file name (default: generator.html): '))
 if not(input_text == ""): html_file = input_text
-input_text = input(print("Write new list file name (example: list.txt): "))
+input_text = input(print("Write new list file name (default: list.txt): "))
 if not(input_text == ""): list_name = input_text
 
 def remove_list(f): #file length pproblem
     read_flag = 1
-    #f.read
     lines = ""
 
     for i in range(2000): #length of the file
@@ -45,15 +44,14 @@ def put_new_list(f, final):
             f.write(line)
 
 def link_creater(splited_list):
-    command = "choco info \"{0}\" >> {1}\\temp_file.txt".format(splited_list[1], dir)
-    os.system(command)
-    f = open("temp_file.txt", "r+")
-    f.readline()
-    s = f.readline()
-    s = s.split()
-    link = splited_list[1] + "." + s[1]
-    f.truncate(0)
-    f.close()
+    os.system("choco info \"{0}\" >> {1}\\temp_file.txt".format(splited_list[1], dir))
+    choco_info_file = open("temp_file.txt", "r+")
+    choco_info_file.readline()
+    choco_info = choco_info_file.readline()
+    choco_info = choco_info.split()
+    link = splited_list[1] + "." + choco_info[1]
+    choco_info_file.truncate(0)
+    choco_info_file.close()
     print(link)
     return link
 
@@ -86,6 +84,7 @@ remove_list(open(html_file))
 
 put_new_list(open(html_file), open("html_formated_list.txt"))
 
+print("Completed!")
 input()
 
 

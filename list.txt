@@ -6,65 +6,78 @@ Opera-gx _ opera-gx
 
 
 -Daily used
-totalcommander _ totalcommander
-keepassxc _ keepassxc _ svg
-syncthing _ syncthing
+Totalcommander _ totalcommander
+Keepassxc _ keepassxc _ svg
+Syncthing _ syncthing
 Aomei backup _ backupper-standard
-everything _ everything
-hwinfo _ hwinfo
+Everything _ everything
+HwInfo _ hwinfo
 FDM torrent _ freedownloadmanager
 
--Windows maintenance and improvement
-DisableWinTracking _ disablewintracking
-geforce-experience _ geforce-experience
-geforce-game-ready-driver _ geforce-game-ready-driver
-wiztree _ wiztree
-ventoy _ ventoy
-dell-update _ dell-update
-Glary Utilities _ glaryutilities-free
+-Windows 
+Autoruns _ autoruns
+Wiztree _ wiztree
+Ventoy _ ventoy
 Revo Uninstaller Free _ revo-uninstaller
-Winaero Tweaker _ winaero-tweaker
-Dism++ _ dismplusplus
 CPU-Z _ cpu-z
+Glary Utilities _ glaryutilities-free
 
 
 -Games
-steam _ steam
-epicgameslauncher _ epicgameslauncher
+Steam _ steam
+Steam Cleaner _ steam-cleaner
+Epicgameslauncher _ epicgameslauncher _ svg
 ds4windows _ ds4windows
 valorant _ valorant
-ubisoft-connect _ ubisoft-connect
-uplay _ uplay _ svg
+ubisoft Connect _ ubisoft-connect
+Uplay _ uplay _ svg
 
 -Social
-discord _ discord _ svg
-skype _ skype
-telegram _ telegram
+Discord _ discord _ svg
+Skype _ skype
+Telegram _ telegram
 
 -Media
-irfanview _ irfanview
+Irfanview _ irfanview
 Image glass _ imageglass _ svg
-potplayer _ potplayer
+Pot player _ potplayer
 LosslessCut _ lossless-cut
 Reaper _ reaper
+OBS Studio _ obs-studio
 
 -Code && other hobbies
-pycharm-community _ pycharm-community
-python _ python _ svg
+Pycharm community _ pycharm-community
+Python _ python _ svg
 VS Code _ vscode
+notepad++ _ notepadplusplus
+VMware Workstation Player _ vmware-workstation-player
 praat _ praat
 wacom-drivers _ wacom-drivers
 
 
 
 -May be needed
-vmware-workstation-player _ vmware-workstation-player
-notepad++ _ notepadplusplus
-autoruns _ autoruns
-chocolateygui _ chocolateygui
-crystaldiskinfo.portable _ crystaldiskinfo.portable
+Chocolateygui _ chocolateygui
+Choco Cleaner _ choco-cleaner
+Crystal Disk Info portable _ crystaldiskinfo.portable
 Display Driver Uninstaller _ ddu
 NVIDIA Profile Inspector _ nvidia-profile-inspector
-Choco Cleaner _ choco-cleaner
+
+
+-Windows start
+Geforce Experience _ geforce-experience
+Geforce Game Ready Driver _ geforce-game-ready-driver
+Disable Win Tracking _ disablewintracking
+Dell update _ dell-update
+Winaero Tweaker _ winaero-tweaker
+Dism++ _ dismplusplus
+
+-Not used atm
+BleachBit _ bleachbit _ svg
+Eraser _ eraser
+Nir Launcher _ nirlauncher
+PicPick _ picpick.portable
+MiniTool Partition Wizard _ partitionwizard
+
 
 
