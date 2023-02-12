@@ -1,7 +1,7 @@
 ![Chocolater](https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/simple-logo.jpg "Chocolater")
 #### App Install Tool
 
-[![CLICK TO VISIT GENERATO with Deezbec's progs](https://img.shields.io/badge/Click_To_Visit_Generator-blue.svg?style=for-the-badge)](https://raw.githack.com/Deezbec/Chocolater/main/generator_deez.html)
+[![CLICK TO VISIT GENERATO with Deezbec's progs](https://img.shields.io/badge/Click_To_Visit_Generator-blue.svg?style=for-the-badge)](https://raw.githack.com/Deezbec/Chocolater/main/generator.html)
 Deezbec's progs 
 
 [![VISIT GENERATOR](https://img.shields.io/badge/Visit_Generator-blue.svg?style=for-the-badge)](https://raw.githack.com/mariosemes/Chocolater/main/generator.html)
