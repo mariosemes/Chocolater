@@ -3,13 +3,11 @@ import os
 
 
 #Default_info
-dir = "c:\!User\Temp\\"
+dir = os.path.abspath(os.curdir)
 html_file = "generator.html"
 list_name = "list.txt"
 #User info
-input_text = input(print("Write program directory (example: c:\Temp\): "))
-if not(input_text == ""): dir = input_text
-input_text = input(print("Write hmtl file name (example: generator.html): "))
+input_text = input(print('Write hmtl file name (example: generator.html): '))
 if not(input_text == ""): html_file = input_text
 input_text = input(print("Write new list file name (example: list.txt): "))
 if not(input_text == ""): list_name = input_text
@@ -46,13 +44,14 @@ def put_new_list(f, final):
         for line in lines:
             f.write(line)
 
-def link_creater():
-    os.system('choco info "{0}" >> {1}temp_file.txt'.format(b[1], dir))
+def link_creater(splited_list):
+    command = "choco info \"{0}\" >> {1}\\temp_file.txt".format(splited_list[1], dir)
+    os.system(command)
     f = open("temp_file.txt", "r+")
     f.readline()
     s = f.readline()
     s = s.split()
-    link = b[1] + "." + s[1]
+    link = splited_list[1] + "." + s[1]
     f.truncate(0)
     f.close()
     print(link)
@@ -70,11 +69,11 @@ for i in a:
         form_check_opened = 1
         final += "<div class=\"form-check\">\n <h3>{}</h3>".format(i[1:])
     else:
-        b = i.split(" _ ")
-        link = link_creater()
-        final += ("\n\n<input class=\"form-check-input\" type=\"checkbox\" name=\"app\" id=\"{0}\" value=\"{0}\">\n".format(b[1]))
-        if len(b) == 2: final += ("<label class=\"form-check-label\" for=\"{1}\"><img src=\"https://community.chocolatey.org/content/packageimages/{2}.png\" width=\"16\" height=\"16\"> {0} <a href=\"https://community.chocolatey.org/packages/{1}\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg\" width=\"16\" height=\"16\"></a></label><br>".format(b[0], b[1], link))
-        if len(b) == 3: final += ("<label class=\"form-check-label\" for=\"{1}\"><img src=\"https://community.chocolatey.org/content/packageimages/{2}.svg\" width=\"16\" height=\"16\"> {0} <a href=\"https://community.chocolatey.org/packages/{1}\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg\" width=\"16\" height=\"16\"></a></label><br>".format(b[0], b[1], link))
+        splited_list = i.split(" _ ")
+        link = link_creater(splited_list)
+        final += ("\n\n<input class=\"form-check-input\" type=\"checkbox\" name=\"app\" id=\"{0}\" value=\"{0}\">\n".format(splited_list[1]))
+        if len(splited_list) == 2: final += ("<label class=\"form-check-label\" for=\"{1}\"><img src=\"https://community.chocolatey.org/content/packageimages/{2}.png\" width=\"16\" height=\"16\"> {0} <a href=\"https://community.chocolatey.org/packages/{1}\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg\" width=\"16\" height=\"16\"></a></label><br>".format(splited_list[0], splited_list[1], link))
+        if len(splited_list) == 3: final += ("<label class=\"form-check-label\" for=\"{1}\"><img src=\"https://community.chocolatey.org/content/packageimages/{2}.svg\" width=\"16\" height=\"16\"> {0} <a href=\"https://community.chocolatey.org/packages/{1}\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg\" width=\"16\" height=\"16\"></a></label><br>".format(splited_list[0], splited_list[1], link))
 
 final += "\n</div> \n\n"
 final += "<!-- end -->\n"
@@ -87,6 +86,7 @@ remove_list(open(html_file))
 
 put_new_list(open(html_file), open("html_formated_list.txt"))
 
+input()
 
 
 
