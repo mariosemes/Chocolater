@@ -5,36 +5,32 @@ Opera _ opera _ svg
 Opera-gx _ opera-gx
 
 
--Needed
-ventoy _ ventoy
+-Daily used
 totalcommander _ totalcommander
-syncthing _ syncthing
 keepassxc _ keepassxc _ svg
-backupper-standard _ backupper-standard
+syncthing _ syncthing
+Aomei backup _ backupper-standard
 everything _ everything
+hwinfo _ hwinfo
+FDM torrent _ freedownloadmanager
+
+-Windows maintenance and improvement
 geforce-experience _ geforce-experience
 geforce-game-ready-driver _ geforce-game-ready-driver
-hwinfo _ hwinfo
-freedownloadmanager _ freedownloadmanager
-wacom-drivers _ wacom-drivers
 wiztree _ wiztree
-
--Cool Stuff
-vmware-workstation-player _ vmware-workstation-player
-notepad++ _ notepadplusplus _ svg
-autoruns _ autoruns
-chocolateygui _ chocolateygui
-crystaldiskinfo.portable _ crystaldiskinfo.portable
+ventoy _ ventoy
 dell-update _ dell-update
-ds4windows _ ds4windows
+Glary Utilities _ glaryutilities-free
+Revo Uninstaller Free _ revo-uninstaller
+
 
 -Games
-ds4windows _ ds4windows
 steam _ steam
 epicgameslauncher _ epicgameslauncher
+ds4windows _ ds4windows
+valorant _ valorant
 ubisoft-connect _ ubisoft-connect
 uplay _ uplay _ svg
-valorant _ valorant
 
 -Social
 discord _ discord _ svg
@@ -45,14 +41,25 @@ telegram _ telegram
 irfanview _ irfanview
 Image glass _ imageglass _ svg
 potplayer _ potplayer
+LosslessCut _ lossless-cut
+Reaper _ reaper
 
--prog
+-Code && other hobbies
 pycharm-community _ pycharm-community
 python _ python _ svg
-
--NotSure
+VS Code _ vscode
 praat _ praat
 wacom-drivers _ wacom-drivers
 
--Win improvements
+
+
+-May be needed
+vmware-workstation-player _ vmware-workstation-player
+notepad++ _ notepadplusplus
+autoruns _ autoruns
+chocolateygui _ chocolateygui
+crystaldiskinfo.portable _ crystaldiskinfo.portable
+Display Driver Uninstaller _ ddu
+NVIDIA Profile Inspector _ nvidia-profile-inspector
+
 
