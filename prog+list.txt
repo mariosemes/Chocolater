@@ -4,8 +4,6 @@ Firefox _ firefox _ svg
 Opera _ opera _ svg
 Opera-gx _ opera-gx
 
--Media
-potplayer _ potplayer
 
 -Needed
 ventoy _ ventoy
@@ -37,6 +35,7 @@ epicgameslauncher _ epicgameslauncher
 ubisoft-connect _ ubisoft-connect
 uplay _ uplay _ svg
 valorant _ valorant
+
 -Social
 discord _ discord _ svg
 skype _ skype
@@ -45,6 +44,7 @@ telegram _ telegram
 -Media
 irfanview _ irfanview
 Image glass _ imageglass _ svg
+potplayer _ potplayer
 
 -prog
 pycharm-community _ pycharm-community
@@ -53,4 +53,6 @@ python _ python _ svg
 -NotSure
 praat _ praat
 wacom-drivers _ wacom-drivers
+
+-Win improvements
 

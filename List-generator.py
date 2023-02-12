@@ -29,7 +29,11 @@ for i in a:
 
 
 final += "\n</div> \n\n"
-print(final)
+f = open('res.txt')
+f.close()
+f = open("res.txt", "r+")
+f.write(final)
+f.close()
 
 
 
