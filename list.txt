@@ -37,13 +37,15 @@ Discord _ discord _ svg
 Skype _ skype
 Telegram _ telegram
 
--Media
+-Media view & edit
 Irfanview _ irfanview
 Image glass _ imageglass _ svg
 Pot player _ potplayer
+OBS Studio _ obs-studio
 LosslessCut _ lossless-cut
 Reaper _ reaper
-OBS Studio _ obs-studio
+HandBrake _ handbrake
+
 
 -Code && other hobbies
 Pycharm community _ pycharm-community
@@ -53,7 +55,6 @@ notepad++ _ notepadplusplus
 VMware Workstation Player _ vmware-workstation-player
 praat _ praat
 wacom-drivers _ wacom-drivers
-
 
 
 -May be needed
@@ -78,6 +79,8 @@ Eraser _ eraser
 Nir Launcher _ nirlauncher
 PicPick _ picpick.portable
 MiniTool Partition Wizard _ partitionwizard
+Process Lasso _ plasso
+LockHunter _ lockhunter
 
 
 
