@@ -69,6 +69,7 @@ NVIDIA Profile Inspector _ nvidia-profile-inspector
 Geforce Experience _ geforce-experience
 Geforce Game Ready Driver _ geforce-game-ready-driver
 Disable Win Tracking _ disablewintracking
+Disable Win Defender (Conf) _ disabledefender-winconfig
 Dell update _ dell-update
 Winaero Tweaker _ winaero-tweaker
 Dism++ _ dismplusplus
