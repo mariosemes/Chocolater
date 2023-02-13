@@ -82,5 +82,12 @@ MiniTool Partition Wizard _ partitionwizard
 Process Lasso _ plasso
 LockHunter _ lockhunter
 
+%Pack 1
+Brave _ brave _ svg
+Totalcommander _ totalcommander
+Keepassxc _ keepassxc _ svg
+Aomei backup _ backupper-standard
+HwInfo _ hwinfo
+VS Code _ vscode
 
 

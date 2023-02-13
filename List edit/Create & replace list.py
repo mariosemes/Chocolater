@@ -51,6 +51,7 @@ def main_list_creater():
     final = ""
     form_check_opened = 0
     current_group = ""
+    group_type = 0
     for i in f:
         if len(i) > 1: a.append(i[:-1])
     for i in a:
@@ -61,12 +62,30 @@ def main_list_creater():
             final += "<input class=\"form-check-input\" type=\"checkbox\" name=\"category\" id=\"{0}\" value=\"{0}\">\n".format(i[1:])
             final += "<label class=\"form-check-label\" for=\"{0}\"><h3>{0}</h3></label> <br>".format(i[1:])
             current_group = i[1:]
+            group_type = 1
         else:
-            splited_list = i.split(" _ ")
-            link = link_creater(splited_list)
-            final += ("\n\n<input class=\"form-check-input\" type=\"checkbox\" name=\"app\" id=\"{0}\" value=\"_{1}_{0}\">\n".format(splited_list[1], current_group))
-            if len(splited_list) == 2: final += ("<label class=\"form-check-label\" for=\"{1}\"><img src=\"https://community.chocolatey.org/content/packageimages/{2}.png\" width=\"16\" height=\"16\"> {0} <a href=\"https://community.chocolatey.org/packages/{1}\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg\" width=\"16\" height=\"16\"></a></label><br>".format(splited_list[0], splited_list[1], link))
-            if len(splited_list) == 3: final += ("<label class=\"form-check-label\" for=\"{1}\"><img src=\"https://community.chocolatey.org/content/packageimages/{2}.svg\" width=\"16\" height=\"16\"> {0} <a href=\"https://community.chocolatey.org/packages/{1}\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg\" width=\"16\" height=\"16\"></a></label><br>".format(splited_list[0], splited_list[1], link))
+            if(i[0] == '%'):
+                if form_check_opened == 1: final += "\n</div> \n\n"
+                form_check_opened = 1
+                final += "<div class=\"form-check\">\n"
+                final += "<input class=\"form-check-input\" type=\"checkbox\" name=\"category\" id=\"{0}\" value=\"{0}\">\n".format(i[1:])
+                final += "<label class=\"form-check-label\" for=\"{0}\"><h3>{0}</h3></label><br>".format(i[1:])
+                current_group = i[1:]
+                group_type = 2
+            else:
+                splited_list = i.split(" _ ")
+                link = link_creater(splited_list)
+                if(group_type == 1):
+                    final += ("\n\n<input class=\"form-check-input\" type=\"checkbox\" name=\"app\" id=\"_{1}_{0}\" value=\"_{1}_{0}\">\n".format(splited_list[1], current_group))
+                    if len(splited_list) == 2: final += ("<label class=\"form-check-label\" for=\"_{3}_{1}\"><img src=\"https://community.chocolatey.org/content/packageimages/{2}.png\" width=\"16\" height=\"16\"> {0} <a href=\"https://community.chocolatey.org/packages/{1}\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg\" width=\"16\" height=\"16\"></a></label><br>".format(splited_list[0], splited_list[1], link, current_group))
+                    if len(splited_list) == 3: final += ("<label class=\"form-check-label\" for=\"_{3}_{1}\"><img src=\"https://community.chocolatey.org/content/packageimages/{2}.svg\" width=\"16\" height=\"16\"> {0} <a href=\"https://community.chocolatey.org/packages/{1}\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg\" width=\"16\" height=\"16\"></a></label><br>".format(splited_list[0], splited_list[1], link, current_group))
+                if(group_type == 2):
+                    final += ("\n\n<input class=\"form-check-input\" type=\"checkbox\" name=\"app\" id=\"_{1}_{0}\" value=\"_{1}_{0}\">\n".format(splited_list[1], current_group))
+                    if len(splited_list) == 2: final += ("<label class=\"form-check-label\" for=\"_{3}_{1}\"> {0} <a href=\"https://community.chocolatey.org/packages/{1}\" target=\"_blank\"><img src=\"https://community.chocolatey.org/content/packageimages/{2}.png\" width=\"16\" height=\"16\"></a></label>".format(splited_list[0][:0], splited_list[1], link, current_group))
+                    if len(splited_list) == 3: final += ("<label class=\"form-check-label\" for=\"_{3}_{1}\"> {0} <a href=\"https://community.chocolatey.org/packages/{1}\" target=\"_blank\"><img src=\"https://community.chocolatey.org/content/packageimages/{2}.svg\" width=\"16\" height=\"16\"></a></label>".format(splited_list[0][:0], splited_list[1], link, current_group))
+                    final += ("<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>")
+
+
     final += "\n</div> \n\n"
     final += "<!-- end -->\n"
 

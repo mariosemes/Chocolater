@@ -4,10 +4,90 @@ Firefox _ firefox _ svg
 Opera _ opera _ svg
 Opera-gx _ opera-gx
 
+
 -Daily used
 Totalcommander _ totalcommander
 Keepassxc _ keepassxc _ svg
 Syncthing _ syncthing
+Aomei backup _ backupper-standard
+Everything _ everything
+HwInfo _ hwinfo
+FDM torrent _ freedownloadmanager
 
+-Windows 
+Autoruns _ autoruns
+Wiztree _ wiztree
+Ventoy _ ventoy
+Revo Uninstaller Free _ revo-uninstaller
+CPU-Z _ cpu-z
+Glary Utilities _ glaryutilities-free
+
+
+-Games
+Steam _ steam
+Steam Cleaner _ steam-cleaner
+Epicgameslauncher _ epicgameslauncher _ svg
+ds4windows _ ds4windows
+valorant _ valorant
+ubisoft Connect _ ubisoft-connect
+Uplay _ uplay _ svg
+
+-Social
+Discord _ discord _ svg
+Skype _ skype
+Telegram _ telegram
+
+-Media view & edit
+Irfanview _ irfanview
+Image glass _ imageglass _ svg
+Pot player _ potplayer
+OBS Studio _ obs-studio
+LosslessCut _ lossless-cut
+Reaper _ reaper
+HandBrake _ handbrake
+
+
+-Code && other hobbies
+Pycharm community _ pycharm-community
+Python _ python _ svg
+VS Code _ vscode
+notepad++ _ notepadplusplus
+VMware Workstation Player _ vmware-workstation-player
+praat _ praat
+wacom-drivers _ wacom-drivers
+
+
+-May be needed
+Chocolateygui _ chocolateygui
+Choco Cleaner _ choco-cleaner
+Crystal Disk Info portable _ crystaldiskinfo.portable
+Display Driver Uninstaller _ ddu
+NVIDIA Profile Inspector _ nvidia-profile-inspector
+
+
+-Windows start
+Geforce Experience _ geforce-experience
+Geforce Game Ready Driver _ geforce-game-ready-driver
+Disable Win Tracking _ disablewintracking
+Dell update _ dell-update
+Winaero Tweaker _ winaero-tweaker
+Dism++ _ dismplusplus
+
+-Not used atm
+BleachBit _ bleachbit _ svg
+Eraser _ eraser
+Nir Launcher _ nirlauncher
+PicPick _ picpick.portable
+MiniTool Partition Wizard _ partitionwizard
+Process Lasso _ plasso
+LockHunter _ lockhunter
+
+%Pack 1
+Brave _ brave _ svg
+Totalcommander _ totalcommander
+Keepassxc _ keepassxc _ svg
+Aomei backup _ backupper-standard
+HwInfo _ hwinfo
+VS Code _ vscode
 
 
