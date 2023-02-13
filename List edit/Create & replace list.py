@@ -33,7 +33,7 @@ def put_new_list(f):
         for line in lines:
             f.write(line)
 
-def link_creater(splited_list):
+def icon_link_creater(splited_list):
     os.system("choco info \"{0}\" >> {1}\\temp_file.txt".format(splited_list[1], os.path.abspath(os.curdir)))
     choco_info_file = open("temp_file.txt", "r+")
     choco_info_file.readline()
@@ -67,22 +67,22 @@ def main_list_creater(list_name):
             if(i[0] == '%'):
                 if form_check_opened == 1: final += "\n</div> \n\n"
                 form_check_opened = 1
+                current_group = i[1:-3]
                 final += "<div class=\"form-check\">\n"
-                final += "<input class=\"form-check-input\" type=\"checkbox\" name=\"category\" id=\"{0}\" value=\"{0}\">\n".format(i[1:])
-                final += "<label class=\"form-check-label\" for=\"{0}\"><h3>{0}</h3></label><br>".format(i[1:])
-                current_group = i[1:]
+                final += "<input class=\"form-check-input\" type=\"checkbox\" name=\"category\" id=\"{0}\" value=\"{0}\">\n".format(current_group)
+                final += "<label class=\"form-check-label\" for=\"{0}\"><h3>{0}</h3></label><br>".format(current_group)
                 group_type = 2
             else:
                 splited_list = i.split(",")
-                link = link_creater(splited_list)
+                link = icon_link_creater(splited_list)
                 if(group_type == 1):
-                    final += ("\n\n<input class=\"form-check-input\" type=\"checkbox\" name=\"app\" id=\",{1},{0}\" value=\",{1},{0}\">\n".format(splited_list[1], current_group))
-                    if splited_list[3] == "svg": final += ("<label class=\"form-check-label\" for=\",{3},{1}\"><img src=\"https://community.chocolatey.org/content/packageimages/{2}.svg\" width=\"16\" height=\"16\"> {0} <a href=\"https://community.chocolatey.org/packages/{1}\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg\" width=\"16\" height=\"16\"></a></label><br>".format(splited_list[0], splited_list[1], link, current_group))
-                    else: final += ("<label class=\"form-check-label\" for=\",{3},{1}\"><img src=\"https://community.chocolatey.org/content/packageimages/{2}.png\" width=\"16\" height=\"16\"> {0} <a href=\"https://community.chocolatey.org/packages/{1}\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg\" width=\"16\" height=\"16\"></a></label><br>".format(splited_list[0], splited_list[1], link, current_group))
+                    final += ("\n\n<input class=\"form-check-input\" type=\"checkbox\" name=\"app\" id=\",{1},{0},{2}\" value=\",{1},{0},{2}\">\n".format(splited_list[1], current_group), splited_list[2])
+                    if splited_list[3] == "svg": final += ("<label class=\"form-check-label\" for=\",{3},{1},{4}\"><img src=\"https://community.chocolatey.org/content/packageimages/{2}.svg\" width=\"16\" height=\"16\"> {0} <a href=\"https://community.chocolatey.org/packages/{1}\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg\" width=\"16\" height=\"16\"></a></label><br>".format(splited_list[0], splited_list[1], link, current_group, splited_list[2]))
+                    else: final += ("<label class=\"form-check-label\" for=\",{3},{1},{4}\"><img src=\"https://community.chocolatey.org/content/packageimages/{2}.png\" width=\"16\" height=\"16\"> {0} <a href=\"https://community.chocolatey.org/packages/{1}\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg\" width=\"16\" height=\"16\"></a></label><br>".format(splited_list[0], splited_list[1], link, current_group, splited_list[2]))
                 if(group_type == 2):
-                    final += ("\n\n<input class=\"form-check-input\" type=\"checkbox\" name=\"app\" id=\",{1},{0}\" value=\",{1},{0}\">\n".format(splited_list[1], current_group))
-                    if splited_list[3] == "svg": final += ("<label class=\"form-check-label\" for=\",{3},{1}\"> {0} <a href=\"https://community.chocolatey.org/packages/{1}\" target=\"_blank\"><img src=\"https://community.chocolatey.org/content/packageimages/{2}.svg\" width=\"16\" height=\"16\"></a></label>".format(splited_list[0][:0], splited_list[1], link, current_group))
-                    else: final += ("<label class=\"form-check-label\" for=\",{3},{1}\"> {0} <a href=\"https://community.chocolatey.org/packages/{1}\" target=\"_blank\"><img src=\"https://community.chocolatey.org/content/packageimages/{2}.png\" width=\"16\" height=\"16\"></a></label>".format(splited_list[0][:0], splited_list[1], link, current_group))
+                    final += ("\n\n<input class=\"form-check-input\" type=\"checkbox\" name=\"app\" id=\",{1},{0},{2}\" value=\",{1},{0},{2}\">\n".format(splited_list[1], current_group), splited_list[2])
+                    if splited_list[3] == "svg": final += ("<label class=\"form-check-label\" for=\",{3},{1},{4}\"> {0} <a href=\"https://community.chocolatey.org/packages/{1}\" target=\"_blank\"><img src=\"https://community.chocolatey.org/content/packageimages/{2}.svg\" width=\"16\" height=\"16\"></a></label>".format(splited_list[0][:0], splited_list[1], link, current_group, splited_list[2]))
+                    else: final += ("<label class=\"form-check-label\" for=\",{3},{1},{4}\"> {0} <a href=\"https://community.chocolatey.org/packages/{1}\" target=\"_blank\"><img src=\"https://community.chocolatey.org/content/packageimages/{2}.png\" width=\"16\" height=\"16\"></a></label>".format(splited_list[0][:0], splited_list[1], link, current_group, splited_list[2]))
                     final += ("<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>")
 
 
@@ -99,17 +99,29 @@ def main_list_creater(list_name):
 #Default_info
 html_file = "generator.html"
 list_name = "list.csv"
+
+if_run_main_list_creator = 1
+if_run_remove_list = 1
+if_run_put_new_list = 1
+
 #User info
 input_text = input(print('Write html file name (default: generator.html): '))
 if not(input_text == ""): html_file = input_text
-input_text = input(print("Write new list file name (default: list.txt): "))
+input_text = input(print("Write new list file name (default: list.csv): "))
 if not(input_text == ""): list_name = input_text
+input_text = input(print("Run all functions? (\"\" - yes; \"no\" - no) "))
+if not(input_text == ""): 
+    if(input(print("Run main_list_creater? (\"\" - yes; \"no\" - no) ") == "no")): if_run_main_list_creator = 0
+    if(input(print("Run remove_list? (\"\" - yes; \"no\" - no) ") == "no")): if_run_remove_list = 0
+    if(input(print("Run put_new_list? (\"\" - yes; \"no\" - no) ") == "no")): if_run_put_new_list = 0
 
-main_list_creater(list_name)
 
-remove_list(open(html_file))
-
-put_new_list(open(html_file))
+if(if_run_main_list_creator): 
+    main_list_creater(list_name)
+if(if_run_remove_list):       
+    remove_list(open(html_file))
+if(if_run_put_new_list):      
+    put_new_list(open(html_file))
 
 print("Completed!")
 input()
