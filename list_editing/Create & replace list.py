@@ -42,7 +42,7 @@ def put_new_list(original_file_name, editted_info_name, edit_id):
 
 def icon_link_creator(splited_list):
     os.system("choco info \"{0}\" >> {1}\\temp_file.txt".format(splited_list[1], os.path.abspath(os.curdir)))
-    choco_info_file = open("temp_file.txt", "r+")
+    choco_info_file = open(os.path.abspath(os.curdir) + "\\" + "temp_file.txt", "r+")
     choco_info_file.readline()
     choco_info = choco_info_file.readline()
     choco_info = choco_info.split()
@@ -78,7 +78,7 @@ def main_list_creator(list_name):
         else:
             splitted_list = i.split(",")
             if i[0] == "#":
-                f = open("temp_file.txt", "a")
+                f = open(os.path.abspath(os.curdir) + "\\" + "temp_file.txt", "a")
                 if i == "#\\\\\\": 
                     f.write("<!-- end_comment -->")
                 else:
@@ -120,7 +120,7 @@ def main_list_creator(list_name):
     final += "\n</div> \n\n"
     final += "<!-- end -->\n"
 
-    f = open("html_formatted_list.txt", "w")
+    f = open(os.path.abspath(os.curdir) + "\\" + "html_formatted_list.txt", "w")
     f.write(final)
     f.close()
 
@@ -128,8 +128,8 @@ def main_list_creator(list_name):
 # Main
 
 # Default_info
-html_file = "generator.html"
-list_name = "list.csv"
+html_file = os.path.abspath(os.curdir) + "\\" + "generator.html"
+list_name = os.path.abspath(os.curdir) + "\\" +  "list.csv"
 
 if_run_main_list_creator = 1
 if_run_remove_list = 1
@@ -147,14 +147,16 @@ if not (input_text == ""): list_name = input_text
 #    if input("Run remove_list? (\"\" - yes; \"no\" - no) ") == "no": if_run_remove_list = 0
 #    if input("Run put_new_list? (\"\" - yes; \"no\" - no) ") == "no": if_run_put_new_list = 0
 
+
+print(os.path.abspath(os.curdir))
 if if_run_main_list_creator:    
     main_list_creator(list_name)
 if if_run_remove_list:
     remove_list(open(html_file), "")  # remove list
     remove_list(open(html_file), "_comment") # remove notes
 if if_run_put_new_list:
-    put_new_list(html_file, "html_formatted_list.txt", "")
-    put_new_list(html_file, "temp_file.txt", "_comment")
+    put_new_list(html_file, os.path.abspath(os.curdir) + "\\" +  "html_formatted_list.txt", "")
+    put_new_list(html_file, os.path.abspath(os.curdir) + "\\" +  "temp_file.txt", "_comment")
     os.remove("{}\\temp_file.txt".format(os.path.abspath(os.curdir)))
 
 print("Completed!")
