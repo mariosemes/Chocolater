@@ -26,7 +26,7 @@ Columns stand for:
 
 Rows:
 Can be devided to 2 categories:
-1st. Group
+1) Group
 Groups can start with:  "*","&","%"
 "*" - standart list
 "&" - list without icon and chocolatey package link
