@@ -31,14 +31,14 @@ Groups can start with:  "\*","&","%"<br>
 "&" - list without icon and chocolatey package link<br>
 "%" - standart compact list. Can be used to create pack's of programs<br><br>
 2nd - Entry<br>
-Just Enter all the needed information for the entry <br>
-4) Run "Create & replace list.py"<br>
-if everything is ok, you will see your programs names with the latest version found on Chocolatey <br>
-Program should end with "Completed"<br>
-If you have any problems, feel free to msg me on discord Deezbec#2094 or create a ticket on github <br><br>
+Just Enter all the needed information for the entry <br><br>
 3rd - Comments<br>
 They should be place on the bottom of list.csv file<br>
 Each line have to be started with "#"<br>
+4) Run "Create & replace list.py"<br>
+if everything is ok, you will see your programs names with the latest version found on Chocolatey <br>
+Program should end with "Completed"<br>
+If you have any problems, feel free to msg me on discord Deezbec#2094 or create a ticket on github <br>
 
 ------------
 ### License
