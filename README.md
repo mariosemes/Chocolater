@@ -6,10 +6,10 @@ Deezbec's progs
 
 Basically it is [Chocolater](https://github.com/mariosemes/Chocolater) by [Mariosemes](https://github.com/mariosemes) with new features:
 1) Simple creation of your own list
-2) "Select all" from group
+2) Icons for programs are automatically got from chocolatey's program package page
 3) WinGet support
-4) Icons for programs are automatically got from chocolatey's program package page<br><br>
-Remark about "select all from group" check box: <br> While it is active checking boxes of entryes of the selected group will remove them from selection
+4) "Select all" from group<br><br>
+Remark about "Select all from group" check box: <br> While it is active checking boxes of entryes of the selected group will remove them from selection
 
 ------------
 [![CLICK TO VISIT GENERATOR with Deezbec's progs](https://img.shields.io/badge/Click_To_Visit_Generator-blue.svg?style=for-the-badge)](https://raw.githack.com/Deezbec/Chocolater-and-WinGeter/main/generator.html)
