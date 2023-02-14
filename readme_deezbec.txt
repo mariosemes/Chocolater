@@ -12,7 +12,7 @@ txt's format:
 -CATEGORY NAME
 PACKAGE TITLE _ PACKAGE NAME
 PACKAGE TITLE _ PACKAGE NAME _ svg
-
+f
  " svg" is added if icon on package's chocolatey page has .svg format
 
 Example:

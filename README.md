@@ -32,11 +32,12 @@ Groups can start with:  "\*","&","%"<br>
 "%" - standart compact list. Can be used to create pack's of programs<br><br>
 2nd - Entry<br>
 Just Enter all the needed information for the entry <br><br>
-3rd - Comments<br>
+3rd - Comments<br> --disabled, buggy
 They should be place on the bottom of list.csv file<br>
 Each line have to be started with "#"<br>
 Comment ends with: "#\\\\\\" <br><br>
 4) Run "Create & replace list.py"<br>
+For some reason I can't run it without IDE, no idea how to fix<br>
 if everything is ok, you will see your programs names with the latest version found on Chocolatey <br>
 Program should end with "Completed"<br>
 If you have any problems, feel free to msg me on discord Deezbec#2094 or create a ticket on github <br>
