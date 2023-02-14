@@ -110,9 +110,8 @@ Aomeibackup,backupper-standard,AOMEI.Backupper,
 HwInfo,hwinfo,REALiX.HWiNFO,
 VSCode,vscode,Microsoft.VisualStudioCode,
 ,,,
-#<!-- start1 -->
 #<h4> Not tested progs </h4>
-# Амогус
+# Гура
 #darktable gimp inkscape krita - фоторедакторы
 #kdenlive olive openshot - видередакторы
 #lmms - создание музыки
@@ -128,4 +127,4 @@ VSCode,vscode,Microsoft.VisualStudioCode,
 #* PC debugging:
 #   * adb app control
 #   * xiaomi adb fastboot tool
-#<!-- end1 -->
+#<!-- end_comment -->
