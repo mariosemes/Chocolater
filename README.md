@@ -25,11 +25,14 @@ Columns stand for:<br>
 4th - What is icon on chocolatey package page extension (default - png)<br><br>
 Rows:<br>
 Can be devided to 2 categories:<br>
-1) Group<br>
+1st -  Group<br>
 Groups can start with:  "*","&","%"<br>
 "*" - standart list<br>
 "&" - list without icon and chocolatey package link<br>
 "%" - standart compact list. Can be used to create pack's of programs<br>
+<br>
+2nd - Entry<br>
+Just Enter all the needed information for the entry
 
 
 ------------
