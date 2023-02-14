@@ -1,10 +1,10 @@
 ![Chocolater](https://raw.githubusercontent.com/mariosemes/Chocolater/main/images/simple-logo.jpg "Chocolater")
 #### App Install Tool
 
-[![CLICK TO VISIT GENERATO with Deezbec's progs](https://img.shields.io/badge/Click_To_Visit_Generator-blue.svg?style=for-the-badge)](https://raw.githack.com/Deezbec/Chocolater/main/generator.html)
+[![CLICK TO VISIT GENERATO with Deezbec's progs](https://img.shields.io/badge/Click_To_Visit_Generator-blue.svg?style=for-the-badge)](https://raw.githack.com/Deezbec/Chocolater-and-WinGeter/main/generator.html)
 Deezbec's progs 
 
-Basically it is Chocolater(https://github.com/mariosemes/Chocolater) by mariosemes(https://github.com/mariosemes) with new features:
+Basically it is [Chocolater](https://github.com/mariosemes/Chocolater) by [Mariosemes](https://github.com/mariosemes) with new features:
 1) Simple creation of your own list
 2) "Select all" from group
 3) WinGet support
@@ -25,11 +25,18 @@ Columns stand for:<br>
 4th - What is icon on chocolatey package page extension (default - png)<br><br>
 Rows:<br>
 Can be devided to 2 categories:<br>
-1) Group<br>
-Groups can start with:  "*","&","%"<br>
-"*" - standart list<br>
+1st -  Group<br>
+Groups can start with:  "\*","&","%"<br>
+"\*" - standart list<br>
 "&" - list without icon and chocolatey package link<br>
 "%" - standart compact list. Can be used to create pack's of programs<br>
+2nd - Entry<br>
+Just Enter all the needed information for the entry <br>
+4) Run "Create & replace list.py"<br>
+if everything is ok, you will see your programs names with the latest version found on Chocolatey <br>
+Program should end with "Completed"<br>
+If you have any problems, feel free to msg me on discord Deezbec#2094 or create a ticket on github
+
 
 
 ------------
