@@ -1,5 +1,4 @@
 import os
-# import linecache
 
 
 def remove_list(original_file, edit_id):  # file length problem
@@ -8,10 +7,10 @@ def remove_list(original_file, edit_id):  # file length problem
 
     for i in range(2000):  # length of the file
         s = original_file.readline()
-        if s == "<!-- start{0} -->\n".format(edit_id): 
+        if s.replace("\n", "") == "<!-- start{0} -->".format(edit_id): 
             read_flag = 0
             lines += "<!-- start{0} -->\n".format(edit_id)
-        if s == "<!-- end{0} -->\n".format(edit_id):   read_flag = 1
+        if s.replace("\n", "") == "<!-- end{0} -->".format(edit_id):   read_flag = 1
         if read_flag: lines += s
 
     with open(html_file, "w") as original_file:
@@ -29,8 +28,8 @@ def put_new_list(original_file_name, editted_info_name, edit_id):
     for i in range(2000):
         if read_flag:     s = original_file.readline()
         if not read_flag: s = editted_info.readline()
-        if s == "<!-- start{0} -->\n".format(edit_id): read_flag = 0
-        if s == "<!-- end{0} -->\n".format(edit_id):  read_flag = 1
+        if s.replace("\n", "") == "<!-- start{0} -->".format(edit_id): read_flag = 0
+        if s.replace("\n", "") == "<!-- end{0} -->".format(edit_id):  read_flag = 1
 
         lines += s
 
@@ -77,8 +76,14 @@ def main_list_creator(list_name):
         else:
             splitted_list = i.split(",")
             if i[0] == "#":
+                print(i)
                 f = open("temp_file.txt", "a")
-                f.write("<br>" + i[1:] + "\n")
+                if i == "#\\\\\\": 
+                    f.write("<!-- end_comment -->")
+
+                else:
+                    f.write("<br>" +  i[1:] + "\n")
+                    print(i[1:])
                 continue
             # p_img_extension = ""
             if splitted_list[3] == "":
@@ -147,10 +152,10 @@ if if_run_main_list_creator:
     main_list_creator(list_name)
 if if_run_remove_list:
     remove_list(open(html_file), "")  # remove list
-    remove_list(open(html_file), "_comment") # remove notes
+    #remove_list(open(html_file), "_comment") # remove notes
 if if_run_put_new_list:
     put_new_list(html_file, "html_formatted_list.txt", "")
-    put_new_list(html_file, "temp_file.txt", "_comment")
+    #put_new_list(html_file, "temp_file.txt", "_comment")
     os.remove("{}\\temp_file.txt".format(os.path.abspath(os.curdir)))
 
 print("Completed!")
