@@ -80,7 +80,7 @@ def main_list_creator(list_name):
             if i[0] == "#":
                 f = open(os.path.abspath(os.curdir) + "\\" + "temp_file.txt", "a")
                 if i == "#\\\\\\": 
-                    f.write("<!-- end_comment -->")
+                    f.write("<!-- end_comment -->\n")
                 else:
                     f.write("<br>" +  i[1:] + "\n")
                 continue
@@ -153,10 +153,10 @@ if if_run_main_list_creator:
     main_list_creator(list_name)
 if if_run_remove_list:
     remove_list(open(html_file), "")  # remove list
-    #remove_list(open(html_file), "_comment") # remove notes
+    remove_list(open(html_file), "_comment") # remove notes
 if if_run_put_new_list:
     put_new_list(html_file, os.path.abspath(os.curdir) + "\\" +  "html_formatted_list.txt", "")
-    #put_new_list(html_file, os.path.abspath(os.curdir) + "\\" +  "temp_file.txt", "_comment")
+    put_new_list(html_file, os.path.abspath(os.curdir) + "\\" +  "temp_file.txt", "_comment")
     os.remove("{}\\temp_file.txt".format(os.path.abspath(os.curdir)))
 
 print("Completed!")
