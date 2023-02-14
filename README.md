@@ -17,20 +17,19 @@ Basically it is Chocolater(https://github.com/mariosemes/Chocolater) by mariosem
 ## Want to create your own list?
 1) Download the source code
 2) Copy "generator.hmtl" and "list.csv" to "list editing" folder
-3) Edit "list.csv" (I personally do this with VS code's "edit CSV" extension)\n
-Columns stand for:
-1st - Displayed package name
-2nd - Chocolatey package name (its also used to get icons)
-3rd - WinGet pack name (optional)
-4th - What is icon on chocolatey package page extension (default - png)
-
-Rows:
-Can be devided to 2 categories:
+3) Edit "list.csv" (I personally do this with VS code's "edit CSV" extension)<br>
+Columns stand for:<br>
+1st - Displayed package name<br>
+2nd - Chocolatey package name (its also used to get icons)<br>
+3rd - WinGet pack name (optional)<br>
+4th - What is icon on chocolatey package page extension (default - png)<br><br>
+Rows:<br>
+Can be devided to 2 categories:<br>
 1) Group<br>
-Groups can start with:  "*","&","%"
-"*" - standart list
-"&" - list without icon and chocolatey package link
-"%" - standart compact list. Can be used to create pack's of programs
+Groups can start with:  "*","&","%"<br>
+"*" - standart list<br>
+"&" - list without icon and chocolatey package link<br>
+"%" - standart compact list. Can be used to create pack's of programs<br>
 
 
 ------------
