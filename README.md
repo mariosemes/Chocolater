@@ -32,6 +32,7 @@ Groups can start with:  "*","&","%"
 "&" - list without icon and chocolatey package link
 "%" - standart compact list. Can be used to create pack's of programs
 
+
 ------------
 ### License
 This script is under the [GNU General Public License v3.0](https://github.com/mariosemes/Chocolater/blob/main/LICENSE "GNU General Public License v3.0") License.
