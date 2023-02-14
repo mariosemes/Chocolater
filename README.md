@@ -13,6 +13,7 @@ Basically it is [Chocolater](https://github.com/mariosemes/Chocolater) by [Mario
 ------------
 ### Let's start!
 [![CLICK TO VISIT GENERATOR with Deezbec's progs](https://img.shields.io/badge/Click_To_Visit_Generator-blue.svg?style=for-the-badge)](https://raw.githack.com/Deezbec/Chocolater-and-WinGeter/main/generator.html)
+Remark about "select all from group" check box: <br> While it is active checking boxes of entryes of the selected group will remove them from selection
 ------------
 ## Want to create your own list?
 1) Download the source code
@@ -24,20 +25,21 @@ Columns stand for:<br>
 3rd - WinGet pack name (optional)<br>
 4th - What is icon on chocolatey package page extension (default - png)<br><br>
 Rows:<br>
-Can be devided to 2 categories:<br>
+Can be devided to 3 categories:<br>
 1st -  Group<br>
 Groups can start with:  "\*","&","%"<br>
 "\*" - standart list<br>
 "&" - list without icon and chocolatey package link<br>
-"%" - standart compact list. Can be used to create pack's of programs<br>
+"%" - standart compact list. Can be used to create pack's of programs<br><br>
 2nd - Entry<br>
 Just Enter all the needed information for the entry <br>
 4) Run "Create & replace list.py"<br>
 if everything is ok, you will see your programs names with the latest version found on Chocolatey <br>
 Program should end with "Completed"<br>
-If you have any problems, feel free to msg me on discord Deezbec#2094 or create a ticket on github
-
-
+If you have any problems, feel free to msg me on discord Deezbec#2094 or create a ticket on github <br><br>
+3rd - Comments<br>
+They should be place on the bottom of list.csv file<br>
+Each line have to be started with "#"<br>
 
 ------------
 ### License
