@@ -4,7 +4,7 @@
 [![CLICK TO VISIT GENERATO with Deezbec's progs](https://img.shields.io/badge/Click_To_Visit_Generator-blue.svg?style=for-the-badge)](https://raw.githack.com/Deezbec/Chocolater/main/generator.html)
 Deezbec's progs 
 
-Basically it is Chocolater(https://github.com/mariosemes/Chocolater) by mariosemes(https://github.com/mariosemes) with new features:
+Basically it is [Chocolater](https://github.com/mariosemes/Chocolater) by [Mariosemes](https://github.com/mariosemes) with new features:
 1) Simple creation of your own list
 2) "Select all" from group
 3) WinGet support
