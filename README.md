@@ -30,9 +30,8 @@ Groups can start with:  "*","&","%"<br>
 "*" - standart list<br>
 "&" - list without icon and chocolatey package link<br>
 "%" - standart compact list. Can be used to create pack's of programs<br>
-<br>
 2nd - Entry<br>
-Just Enter all the needed information for the entry
+Just Enter all the needed information for the entry <br>
 
 
 ------------
