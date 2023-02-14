@@ -8,12 +8,11 @@ Basically it is [Chocolater](https://github.com/mariosemes/Chocolater) by [Mario
 1) Simple creation of your own list
 2) "Select all" from group
 3) WinGet support
-4) Icons for programs are automatically got from chocolatey's program package page
+4) Icons for programs are automatically got from chocolatey's program package page<br><br>
+Remark about "select all from group" check box: <br> While it is active checking boxes of entryes of the selected group will remove them from selection
 
 ------------
-### Let's start!
 [![CLICK TO VISIT GENERATOR with Deezbec's progs](https://img.shields.io/badge/Click_To_Visit_Generator-blue.svg?style=for-the-badge)](https://raw.githack.com/Deezbec/Chocolater-and-WinGeter/main/generator.html)
-Remark about "select all from group" check box: <br> While it is active checking boxes of entryes of the selected group will remove them from selection
 ------------
 ## Want to create your own list?
 1) Download the source code
