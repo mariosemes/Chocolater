@@ -26,8 +26,8 @@ Columns stand for:<br>
 Rows:<br>
 Can be devided to 2 categories:<br>
 1st -  Group<br>
-Groups can start with:  "*","&","%"<br>
-"*" - standart list<br>
+Groups can start with:  "\*","&","%"<br>
+"\*" - standart list<br>
 "&" - list without icon and chocolatey package link<br>
 "%" - standart compact list. Can be used to create pack's of programs<br>
 2nd - Entry<br>
