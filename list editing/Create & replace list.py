@@ -82,26 +82,28 @@ def main_list_creator(list_name):
                 icon_link_creator(splitted_list), p_img_extension)
             package_link_html_opened = "<a href=\"https://community.chocolatey.org/packages/{0}\" target=\"_blank\">".format(
                 splitted_list[1])
-            link_icon = "<img src=\"https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/url.svg\" width=\"16\" height=\"16\">"
-            winget_icon = "<img src=\"https://raw.githubusercontent.com/Deezbec/Chocolater/main/images/WinGet_support.webp\" width=\"16\" height=\"16\">"
-            winget_icon = ""
+            link_icon = "<img src=\"https://raw.githubusercontent.com/Deezbec/Chocolater-and-WinGeter/main/images/url.svg\" width=\"16\" height=\"16\">"
+            winget_icon = "<img src=\"https://raw.githubusercontent.com/Deezbec/Chocolater-and-WinGeter/main/images/WinGet_support.webp\" width=\"16\" height=\"16\">"
+            winget_package_htmlopened = "<a href=\"https://wingetgui.com/apps?id={0}\" target=\"_blank\">".format(
+                splitted_list[2])
+            #winget_icon = ""
             if splitted_list[2] == "": winget_icon = ""
             final += (
                 "\n\n<input class=\"form-check-input\" type=\"checkbox\" name=\"app\" id=\",{1},{0},{2}\" value=\",{1},{0},{2}\">\n".format(
                     splitted_list[1], current_group, splitted_list[2]))
             if group_type == 1:
-                final += "<label class=\"form-check-label\" for=\",{3},{1},{2}\">{4} {0} {5}{6}</a>{7}</label><br>".format(
+                final += "<label class=\"form-check-label\" for=\",{3},{1},{2}\">{4} {0} {5}{6}</a>{7}{8}</a></label><br>".format(
                     splitted_list[0], splitted_list[1], splitted_list[2], current_group, package_img,
-                    package_link_html_opened, link_icon, winget_icon)
+                    package_link_html_opened, link_icon, winget_package_htmlopened, winget_icon)
             if group_type == 2:
                 final += "<label class=\"form-check-label\" for=\",{3},{1},{2}\">{5}{4}</a></label>".format(
                     splitted_list[0], splitted_list[1], splitted_list[2], current_group, package_img,
                     package_link_html_opened, )
                 final += "<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>"
             if group_type == 3:
-                final += "<label class=\"form-check-label\" for=\",{3},{1},{2}\">{0}</a></label><br>".format(
+                final += "<label class=\"form-check-label\" for=\",{3},{1},{2}\">{0}{6}{7}</a></label><br>".format(
                     splitted_list[0], splitted_list[1], splitted_list[2], current_group, package_img,
-                    package_link_html_opened, )
+                    package_link_html_opened, winget_package_htmlopened, winget_icon)
                 
 
     final += "\n</div> \n\n"
