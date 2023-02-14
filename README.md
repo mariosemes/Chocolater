@@ -7,7 +7,7 @@ Deezbec's progs
 Basically it is [Chocolater](https://github.com/mariosemes/Chocolater) by [Mariosemes](https://github.com/mariosemes) with new features:
 1) Simple creation of your own list
 2) Icons for programs are automatically got from chocolatey's program package page
-3) WinGet support
+3) WinGet support(Not figured out how commands work here, so just package names at the moment)
 4) "Select all" from group<br><br>
 Remark about "Select all from group" check box: <br> While it is active checking boxes of entryes of the selected group will remove them from selection
 
@@ -31,14 +31,14 @@ Groups can start with:  "\*","&","%"<br>
 "&" - list without icon and chocolatey package link<br>
 "%" - standart compact list. Can be used to create pack's of programs<br><br>
 2nd - Entry<br>
-Just Enter all the needed information for the entry <br>
+Just Enter all the needed information for the entry <br><br>
+3rd - Comments<br>
+They should be place on the bottom of list.csv file<br>
+Each line have to be started with "#"<br><br>
 4) Run "Create & replace list.py"<br>
 if everything is ok, you will see your programs names with the latest version found on Chocolatey <br>
 Program should end with "Completed"<br>
-If you have any problems, feel free to msg me on discord Deezbec#2094 or create a ticket on github <br><br>
-3rd - Comments<br>
-They should be place on the bottom of list.csv file<br>
-Each line have to be started with "#"<br>
+If you have any problems, feel free to msg me on discord Deezbec#2094 or create a ticket on github <br>
 
 ------------
 ### License
