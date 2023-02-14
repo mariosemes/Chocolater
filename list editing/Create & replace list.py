@@ -30,9 +30,9 @@ def put_new_list(original_file_name, editted_info_name, edit_id):
         if read_flag:     s = original_file.readline()
         if not read_flag: s = editted_info.readline()
         if s.replace("\n", "") == "<!-- start{0} -->".format(edit_id): read_flag = 0
+        lines += s
         if s.replace("\n", "") == "<!-- end{0} -->".format(edit_id):  read_flag = 1
 
-        lines += s
         if s == "": break
 
     with open(original_file_name, "w") as f:
@@ -151,10 +151,10 @@ if if_run_main_list_creator:
     main_list_creator(list_name)
 if if_run_remove_list:
     remove_list(open(html_file), "")  # remove list
-    #remove_list(open(html_file), "_comment") # remove notes
+    remove_list(open(html_file), "_comment") # remove notes
 if if_run_put_new_list:
     put_new_list(html_file, "html_formatted_list.txt", "")
-    #put_new_list(html_file, "temp_file.txt", "_comment")
+    put_new_list(html_file, "temp_file.txt", "_comment")
     os.remove("{}\\temp_file.txt".format(os.path.abspath(os.curdir)))
 
 print("Completed!")

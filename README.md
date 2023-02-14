@@ -35,7 +35,7 @@ Just Enter all the needed information for the entry <br><br>
 3rd - Comments<br>
 They should be place on the bottom of list.csv file<br>
 Each line have to be started with "#"<br>
-Comment ends with: "#<!-- end_comment -->\n" and new line(just click enter)<br><br>
+Comment ends with: "#\\\\\\" <br><br>
 4) Run "Create & replace list.py"<br>
 if everything is ok, you will see your programs names with the latest version found on Chocolatey <br>
 Program should end with "Completed"<br>
