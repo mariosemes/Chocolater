@@ -17,7 +17,7 @@ Basically it is Chocolater(https://github.com/mariosemes/Chocolater) by mariosem
 ## Want to create your own list?
 1) Download the source code
 2) Copy "generator.hmtl" and "list.csv" to "list editing" folder
-3) Edit "list.csv" (I personally do this with VS code's "edit CSV" extension)
+3) Edit "list.csv" (I personally do this with VS code's "edit CSV" extension)\n
 Columns stand for:
 1st - Displayed package name
 2nd - Chocolatey package name (its also used to get icons)
