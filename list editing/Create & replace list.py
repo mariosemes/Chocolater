@@ -1,17 +1,18 @@
 import os
 
 
-def remove_list(original_file, edit_id):  # file length problem
+def remove_list(original_file, edit_id):  
     read_flag = 1
     lines = ""
 
-    for i in range(2000):  # length of the file
+    while(1): 
         s = original_file.readline()
         if s.replace("\n", "") == "<!-- start{0} -->".format(edit_id): 
             read_flag = 0
             lines += "<!-- start{0} -->\n".format(edit_id)
         if s.replace("\n", "") == "<!-- end{0} -->".format(edit_id):   read_flag = 1
         if read_flag: lines += s
+        if s == "": break
 
     with open(html_file, "w") as original_file:
         for line in lines:
@@ -25,13 +26,14 @@ def put_new_list(original_file_name, editted_info_name, edit_id):
     lines = ""
     s = ""
 
-    for i in range(2000):
+    while(1):
         if read_flag:     s = original_file.readline()
         if not read_flag: s = editted_info.readline()
         if s.replace("\n", "") == "<!-- start{0} -->".format(edit_id): read_flag = 0
         if s.replace("\n", "") == "<!-- end{0} -->".format(edit_id):  read_flag = 1
 
         lines += s
+        if s == "": break
 
     with open(original_file_name, "w") as f:
         for line in lines:
@@ -76,14 +78,11 @@ def main_list_creator(list_name):
         else:
             splitted_list = i.split(",")
             if i[0] == "#":
-                print(i)
                 f = open("temp_file.txt", "a")
                 if i == "#\\\\\\": 
                     f.write("<!-- end_comment -->")
-
                 else:
                     f.write("<br>" +  i[1:] + "\n")
-                    print(i[1:])
                 continue
             # p_img_extension = ""
             if splitted_list[3] == "":
@@ -141,12 +140,12 @@ input_text = input('Write html file name (default: generator.html): ')
 if not (input_text == ""): html_file = input_text
 input_text = input("Write new list file name (default: list.csv): ")
 if not (input_text == ""): list_name = input_text
-input_text = input("Run all functions? (default: yes): ") #\n type \"e\" for extra functions):
-if not (input_text == "") and not (input_text == "yes"):
-    if input("Run main_list_creator? (\"\" - yes; \"no\" - no) ") == "no":
-        if_run_main_list_creator = 0
-    if input("Run remove_list? (\"\" - yes; \"no\" - no) ") == "no": if_run_remove_list = 0
-    if input("Run put_new_list? (\"\" - yes; \"no\" - no) ") == "no": if_run_put_new_list = 0
+#input_text = input("Run all functions? (default: yes): ") #\n type \"e\" for extra functions):
+#if not (input_text == "") and not (input_text == "yes"):
+#    if input("Run main_list_creator? (\"\" - yes; \"no\" - no) ") == "no":
+#        if_run_main_list_creator = 0
+#    if input("Run remove_list? (\"\" - yes; \"no\" - no) ") == "no": if_run_remove_list = 0
+#    if input("Run put_new_list? (\"\" - yes; \"no\" - no) ") == "no": if_run_put_new_list = 0
 
 if if_run_main_list_creator:    
     main_list_creator(list_name)
