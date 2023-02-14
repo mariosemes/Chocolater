@@ -2,7 +2,7 @@
 #### App Install Tool
 
 [![CLICK TO VISIT GENERATO with Deezbec's progs](https://img.shields.io/badge/Click_To_Visit_Generator-blue.svg?style=for-the-badge)](https://raw.githack.com/Deezbec/Chocolater-and-WinGeter/main/generator.html)
-Deezbec's progs 
+Deezbec's list
 
 Basically it is [Chocolater](https://github.com/mariosemes/Chocolater) by [Mariosemes](https://github.com/mariosemes) with new features:
 1) Simple creation of your own list
@@ -11,8 +11,6 @@ Basically it is [Chocolater](https://github.com/mariosemes/Chocolater) by [Mario
 4) "Select all" from group<br><br>
 Remark about "Select all from group" check box: <br> While it is active checking boxes of entryes of the selected group will remove them from selection
 
-------------
-[![CLICK TO VISIT GENERATOR with Deezbec's progs](https://img.shields.io/badge/Click_To_Visit_Generator-blue.svg?style=for-the-badge)](https://raw.githack.com/Deezbec/Chocolater-and-WinGeter/main/generator.html)
 ------------
 ## Want to create your own list?
 1) Download the source code
@@ -35,7 +33,7 @@ Just Enter all the needed information for the entry <br><br>
 3rd - Comments<br>
 They should be place on the bottom of list.csv file<br>
 Each line have to be started with "#"<br>
-Comment ends with: "#\\\\\\" <br><br>
+Comment section ends with: "#\\\\\\" <br><br>
 4) Run "Create & replace list.py"<br>
 For some reason I can't run it without IDE, no idea how to fix<br>
 That's why I recommend you to launch it in VS code with python or any other IDE<br>
