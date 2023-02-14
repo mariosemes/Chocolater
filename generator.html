@@ -173,7 +173,7 @@
 <label class="form-check-label" for=",Social,discord,Discord.Discord"><img src="https://community.chocolatey.org/content/packageimages/discord.1.0.9005.svg" width="16" height="16"> Discord <a href="https://community.chocolatey.org/packages/discord" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater-and-WinGeter/main/images/url.svg" width="16" height="16"></a><a href="https://wingetgui.com/apps?id=Discord.Discord" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater-and-WinGeter/main/images/WinGet_support.webp" width="16" height="16"></a></label><br>
 
 <input class="form-check-input" type="checkbox" name="app" id=",Social,skype,Microsoft.Skype" value=",Social,skype,Microsoft.Skype">
-<label class="form-check-label" for=",Social,skype,Microsoft.Skype"><img src="https://community.chocolatey.org/content/packageimages/skype.8.93.0.406.png" width="16" height="16"> Skype <a href="https://community.chocolatey.org/packages/skype" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater-and-WinGeter/main/images/url.svg" width="16" height="16"></a><a href="https://wingetgui.com/apps?id=Microsoft.Skype" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater-and-WinGeter/main/images/WinGet_support.webp" width="16" height="16"></a></label><br>
+<label class="form-check-label" for=",Social,skype,Microsoft.Skype"><img src="https://community.chocolatey.org/content/packageimages/skype.8.93.0.408.png" width="16" height="16"> Skype <a href="https://community.chocolatey.org/packages/skype" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater-and-WinGeter/main/images/url.svg" width="16" height="16"></a><a href="https://wingetgui.com/apps?id=Microsoft.Skype" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater-and-WinGeter/main/images/WinGet_support.webp" width="16" height="16"></a></label><br>
 
 <input class="form-check-input" type="checkbox" name="app" id=",Social,telegram,Telegram.TelegramDesktop" value=",Social,telegram,Telegram.TelegramDesktop">
 <label class="form-check-label" for=",Social,telegram,Telegram.TelegramDesktop"><img src="https://community.chocolatey.org/content/packageimages/telegram.4.6.2.png" width="16" height="16"> Telegram <a href="https://community.chocolatey.org/packages/telegram" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater-and-WinGeter/main/images/url.svg" width="16" height="16"></a><a href="https://wingetgui.com/apps?id=Telegram.TelegramDesktop" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater-and-WinGeter/main/images/WinGet_support.webp" width="16" height="16"></a></label><br>
@@ -376,6 +376,21 @@
 </div> 
 
 <!-- end -->
+<!-- end -->
+<!-- end -->
+<!-- end -->
+<!-- end -->
+<!-- end -->
+<!-- end -->
+<!-- end -->
+<!-- end -->
+<!-- end -->
+<!-- end -->
+<!-- end -->
+<!-- end -->
+<!-- end -->
+<!-- end -->
+<!-- end -->
             </div> 
 
             <div class="row mt-5">
@@ -404,84 +419,5 @@
         <div class="row mt-5 mb-5">
             <div class="col">
                 <p>* By using the script, you agree to use the Chocolatey Software Management Tool and all associated applications at your own risk.
-                    
-<h4> Not tested progs </h4>
-<br>
-<br>darktable gimp inkscape krita - фоторедактор
-<br>kdenlive olive openshot - видередактор
-<br>lmms - создание музыки
-<br>scribus sublime text  - верстка
-<br>thunder bird - почта
-<br>only office - office
-<br>kodi - синхронизированный кинотеатр
-<br>
-<br>* VPN - Aman vpn (Marty files edition), PrivadoVPN - 10GB free  
-<br>
-<br>_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_Android_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-<br>
-<br>* PC debugging:
-<br>   * adb app control
-<br>   * xiaomi adb fastboot tool
-                </p>
-            </div>
-        </div>
-
-    </div>
-</body>
-<script>
-    function saveBat() {
-        var radios = document.getElementsByName('UserSelection');
-        var radiosPM = document.getElementsByName('UserSelectionPM');
-        for (var i = 0, length = radios.length; i < length; i++) {
-          if (radios[i].checked) {
-            user_selection = radios[i].value;
-            //break;
-          }
-          if(radiosPM[i].checked) {
-            user_selectionPM = radiosPM[i].value;
-          }
-        }
-
-        var app = document.forms[0];
-        var app_list = "";
-        var i;
-        var selected_category;
-        for (i = 0; i < app.length; i++) {
-            if(app[i].value.split(/,/)[1] == selected_category && selected_category != undefined){
-                    if (app[i].checked == false && user_selectionPM == "choco") { app_list = app_list + app[i].value.split(/,/)[2] + " "; }
-                    if (app[i].checked == false && user_selectionPM == "winget") { app_list = app_list + app[i].value.split(/,/)[3]  + " "; }
-                }
-            else{
-                    if (app[i].checked == true) {
-                        if(app[i].name == "category") {selected_category = app[i].value}
-                        if(app[i].value[0] == ',') {
-                        if (user_selectionPM == "choco") { app_list = app_list + app[i].value.split(/,/)[2]  + " "; }
-                        if (user_selectionPM == "winget") { app_list = app_list + app[i].value.split(/,/)[3]  + " "; }
-                        }
-            }
-            }
-        }        
-
-        var windows_line = user_selectionPM + ' ' + user_selection + ' ' + app_list + '-y ';
-
-        if (app_list) {
-            document.getElementById('windows').innerHTML = windows_line;
-        } else {
-            document.getElementById('windows').innerHTML = "No apps selected. Please choose your apps to create your installation code.";
-        }
-    }
-
-    function CopyToClipboard (containerid) {
-      const textarea = document.createElement('textarea')
-      textarea.id = 'temp_element'
-      textarea.style.height = 0
-      document.body.appendChild(textarea)
-      textarea.value = document.getElementById(containerid).innerText
-      const selector = document.querySelector('#temp_element')
-      selector.select()
-      document.execCommand('copy')
-      document.body.removeChild(textarea)
-    }
-
-</script>
-</html>
+<!-- start1 -->
+<br><!-- start1 --><br><h4> Not tested progs </h4><br> Амогус temp_file removal test<br>darktable gimp inkscape krita - фоторедакторы<br>kdenlive olive openshot - видередакторы<br>lmms - создание музыки<br>scribus sublime text  - верстка<br>thunder bird - почта<br>only office - office<br>kodi - синхронизированный кинотеатр<br> VPN - Aman vpn (Marty files), <br> PrivadoVPN - 10GB free<br>Android<br>* PC debugging:<br>   * adb app control<br>   * xiaomi adb fastboot tool<br><!-- end1 --

@@ -110,3 +110,22 @@ Aomeibackup,backupper-standard,AOMEI.Backupper,
 HwInfo,hwinfo,REALiX.HWiNFO,
 VSCode,vscode,Microsoft.VisualStudioCode,
 ,,,
+#<!-- start1 -->
+#<h4> Not tested progs </h4>
+# Амогус
+#darktable gimp inkscape krita - фоторедакторы
+#kdenlive olive openshot - видередакторы
+#lmms - создание музыки
+#scribus sublime text  - верстка
+#thunder bird - почта
+#only office - office
+#kodi - синхронизированный кинотеатр
+#
+# VPN - Aman vpn (Marty files), 
+# PrivadoVPN - 10GB free
+#Android
+#
+#* PC debugging:
+#   * adb app control
+#   * xiaomi adb fastboot tool
+#<!-- end1 -->
