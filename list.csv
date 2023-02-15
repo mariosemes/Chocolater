@@ -1,6 +1,6 @@
 Displayed name,Choco pack name,WinGet pack name,Is svg?
 *Browser,,,
-Brave,brave,Brave.Brave,svg
+Brave,brave,BraveSoftware.BraveBrowser,svg
 Firefox,firefox,Mozilla.Firefox,svg
 Opera,opera,Opera.Opera,svg
 Opera-gx,opera-gx,Opera.OperaGX,
@@ -88,6 +88,7 @@ ThrottleStop,throttlestop,,
 ,,,
 &Not in Choco,,,
 Caustic,,,
+Mozilla Thunder bird,,Mozilla.Thunderbird,
 Kaspersky Security Cloud,,Kaspersky.SecurityCloud,
 OutPlayed,,,
 Disk Drill,,,
@@ -111,17 +112,15 @@ HwInfo,hwinfo,REALiX.HWiNFO,
 VSCode,vscode,Microsoft.VisualStudioCode,
 ,,,
 #<h4> Not tested progs </h4>
-# Гура
+#
 #darktable gimp inkscape krita - фоторедакторы
 #kdenlive olive openshot - видередакторы
 #lmms - создание музыки
 #scribus sublime text  - верстка
-#thunder bird - почта
 #only office - office
 #kodi - синхронизированный кинотеатр
 #
-# VPN - Aman vpn (Marty files), 
-# PrivadoVPN - 10GB free
+# VPN - Aman vpn (Marty files); Privado
 #Android
 #
 #* PC debugging:

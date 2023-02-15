@@ -74,8 +74,8 @@
 <input class="form-check-input" type="checkbox" name="category" id="Browser" value="Browser">
 <label class="form-check-label" for="Browser"><h3>Browser</h3></label> <br>
 
-<input class="form-check-input" type="checkbox" name="app" id=",Browser,brave,Brave.Brave" value=",Browser,brave,Brave.Brave">
-<label class="form-check-label" for=",Browser,brave,Brave.Brave"><img src="https://community.chocolatey.org/content/packageimages/brave.1.46.153.svg" width="16" height="16"> Brave <a href="https://community.chocolatey.org/packages/brave" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater-and-WinGeter/main/images/url.svg" width="16" height="16"></a><a href="https://wingetgui.com/apps?id=Brave.Brave" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater-and-WinGeter/main/images/WinGet_support.webp" width="16" height="16"></a></label><br>
+<input class="form-check-input" type="checkbox" name="app" id=",Browser,brave,BraveSoftware.BraveBrowser" value=",Browser,brave,BraveSoftware.BraveBrowser">
+<label class="form-check-label" for=",Browser,brave,BraveSoftware.BraveBrowser"><img src="https://community.chocolatey.org/content/packageimages/brave.1.46.153.svg" width="16" height="16"> Brave <a href="https://community.chocolatey.org/packages/brave" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater-and-WinGeter/main/images/url.svg" width="16" height="16"></a><a href="https://wingetgui.com/apps?id=BraveSoftware.BraveBrowser" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater-and-WinGeter/main/images/WinGet_support.webp" width="16" height="16"></a></label><br>
 
 <input class="form-check-input" type="checkbox" name="app" id=",Browser,firefox,Mozilla.Firefox" value=",Browser,firefox,Mozilla.Firefox">
 <label class="form-check-label" for=",Browser,firefox,Mozilla.Firefox"><img src="https://community.chocolatey.org/content/packageimages/firefox.109.0.1.svg" width="16" height="16"> Firefox <a href="https://community.chocolatey.org/packages/firefox" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater-and-WinGeter/main/images/url.svg" width="16" height="16"></a><a href="https://wingetgui.com/apps?id=Mozilla.Firefox" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater-and-WinGeter/main/images/WinGet_support.webp" width="16" height="16"></a></label><br>
@@ -316,6 +316,9 @@
 <input class="form-check-input" type="checkbox" name="app" id=",Not in Choco,," value=",Not in Choco,,">
 <label class="form-check-label" for=",Not in Choco,,">Caustic<a href="https://wingetgui.com/apps?id=" target="_blank"></a></label><br>
 
+<input class="form-check-input" type="checkbox" name="app" id=",Not in Choco,,Mozilla.Thunderbird" value=",Not in Choco,,Mozilla.Thunderbird">
+<label class="form-check-label" for=",Not in Choco,,Mozilla.Thunderbird">Mozilla Thunder bird<a href="https://wingetgui.com/apps?id=Mozilla.Thunderbird" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater-and-WinGeter/main/images/WinGet_support.webp" width="16" height="16"></a></label><br>
+
 <input class="form-check-input" type="checkbox" name="app" id=",Not in Choco,,Kaspersky.SecurityCloud" value=",Not in Choco,,Kaspersky.SecurityCloud">
 <label class="form-check-label" for=",Not in Choco,,Kaspersky.SecurityCloud">Kaspersky Security Cloud<a href="https://wingetgui.com/apps?id=Kaspersky.SecurityCloud" target="_blank"><img src="https://raw.githubusercontent.com/Deezbec/Chocolater-and-WinGeter/main/images/WinGet_support.webp" width="16" height="16"></a></label><br>
 
@@ -379,6 +382,8 @@
 <!-- end -->
 <!-- end -->
 <!-- end -->
+<!-- end -->
+<!-- end -->
             </div> 
 
             <div class="row mt-5">
@@ -409,20 +414,19 @@
                 <p>* By using the script, you agree to use the Chocolatey Software Management Tool and all associated applications at your own risk.
 <!-- start_comment -->
 <br><h4> Not tested progs </h4>
-<br> Гура
 <br>darktable gimp inkscape krita - фоторедакторы
 <br>kdenlive olive openshot - видередакторы
 <br>lmms - создание музыки
 <br>scribus sublime text  - верстка
-<br>thunder bird - почта
 <br>only office - office
 <br>kodi - синхронизированный кинотеатр
-<br> VPN - Aman vpn (Marty files), 
-<br> PrivadoVPN - 10GB free
+<br> VPN - Aman vpn (Marty files); Privado
 <br>Android
 <br>* PC debugging:
 <br>   * adb app control
 <br>   * xiaomi adb fastboot tool
+<!-- end_comment -->
+<!-- end_comment -->
 <!-- end_comment -->
                 </p>
             </div>
@@ -463,8 +467,8 @@
             }
             }
         }        
-
-        var windows_line = user_selectionPM + ' ' + user_selection + ' ' + app_list + '-y ';
+        if (user_selectionPM == "choco") {var windows_line = user_selectionPM + ' ' + user_selection + ' ' + app_list + '-y ';}
+        else { var windows_line = user_selectionPM + ' ' + user_selection + ' ' + app_list; }
 
         if (app_list) {
             document.getElementById('windows').innerHTML = windows_line;

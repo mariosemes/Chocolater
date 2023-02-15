@@ -1,7 +1,8 @@
 import os
 
 
-def remove_list(original_file, edit_id):  
+def remove_list(original_file_path, edit_id):  
+    original_file = open(original_file_path)
     read_flag = 1
     lines = ""
 
@@ -14,14 +15,14 @@ def remove_list(original_file, edit_id):
         if read_flag: lines += s
         if s == "": break
 
-    with open(html_file, "w") as original_file:
+    with open(original_file_path, "w") as original_file:
         for line in lines:
             original_file.write(line)
 
 
-def put_new_list(original_file_name, editted_info_name, edit_id):
-    original_file = open(original_file_name)
-    editted_info  = open(editted_info_name)
+def put_new_list(original_file_path, editted_info_path, edit_id):
+    original_file = open(original_file_path)
+    editted_info  = open(editted_info_path)
     read_flag = 1
     lines = ""
     s = ""
@@ -35,7 +36,7 @@ def put_new_list(original_file_name, editted_info_name, edit_id):
 
         if s == "": break
 
-    with open(original_file_name, "w") as f:
+    with open(original_file_path, "w") as f:
         for line in lines:
             f.write(line)
 
@@ -53,8 +54,8 @@ def icon_link_creator(splited_list):
     return link
 
 
-def main_list_creator(list_name):
-    f = open(list_name)
+def main_list_creator(list_path):
+    f = open(list_path)
     a = []
     final = ""
     form_check_opened = 0
@@ -128,8 +129,8 @@ def main_list_creator(list_name):
 # Main
 
 # Default_info
-html_file = os.path.abspath(os.curdir) + "\\" + "generator.html"
-list_name = os.path.abspath(os.curdir) + "\\" +  "list.csv"
+generator_path = os.path.abspath(os.curdir) + "\\" + "generator.html"
+list_path = os.path.abspath(os.curdir) + "\\" +  "list.csv"
 
 if_run_main_list_creator = 1
 if_run_remove_list = 1
@@ -137,9 +138,9 @@ if_run_put_new_list = 1
 
 # User info
 input_text = input('Write html file name (default: generator.html): ')
-if not (input_text == ""): html_file = input_text
+if not (input_text == ""): generator_path = input_text
 input_text = input("Write new list file name (default: list.csv): ")
-if not (input_text == ""): list_name = input_text
+if not (input_text == ""): list_path = input_text
 #input_text = input("Run all functions? (default: yes): ") #\n type \"e\" for extra functions):
 #if not (input_text == "") and not (input_text == "yes"):
 #    if input("Run main_list_creator? (\"\" - yes; \"no\" - no) ") == "no":
@@ -150,13 +151,13 @@ if not (input_text == ""): list_name = input_text
 
 print(os.path.abspath(os.curdir))
 if if_run_main_list_creator:    
-    main_list_creator(list_name)
+    main_list_creator(list_path)
 if if_run_remove_list:
-    remove_list(open(html_file), "")  # remove list
-    remove_list(open(html_file), "_comment") # remove notes
+    remove_list(generator_path, "")  # remove list
+    remove_list(generator_path, "_comment") # remove notes
 if if_run_put_new_list:
-    put_new_list(html_file, os.path.abspath(os.curdir) + "\\" +  "html_formatted_list.txt", "")
-    put_new_list(html_file, os.path.abspath(os.curdir) + "\\" +  "temp_file.txt", "_comment")
+    put_new_list(generator_path, os.path.abspath(os.curdir) + "\\" +  "html_formatted_list.txt", "")
+    put_new_list(generator_path, os.path.abspath(os.curdir) + "\\" +  "temp_file.txt", "_comment")
     os.remove("{}\\temp_file.txt".format(os.path.abspath(os.curdir)))
 
 print("Completed!")
