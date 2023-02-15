@@ -28,11 +28,16 @@ def put_new_list(original_file_path, editted_info_path, edit_id):
     s = ""
 
     while(1):
-        if read_flag:     s = original_file.readline()
-        if not read_flag: s = editted_info.readline()
+        if read_flag:     
+            s = original_file.readline()
+        if not read_flag: 
+            s = editted_info.readline()
+            if s.replace("\n", "") == "<!-- end{0} -->".format(edit_id):  
+                read_flag = 1
+                continue
         if s.replace("\n", "") == "<!-- start{0} -->".format(edit_id): read_flag = 0
+        
         lines += s
-        if s.replace("\n", "") == "<!-- end{0} -->".format(edit_id):  read_flag = 1
 
         if s == "": break
 
@@ -148,8 +153,6 @@ if not (input_text == ""): list_path = input_text
 #    if input("Run remove_list? (\"\" - yes; \"no\" - no) ") == "no": if_run_remove_list = 0
 #    if input("Run put_new_list? (\"\" - yes; \"no\" - no) ") == "no": if_run_put_new_list = 0
 
-
-print(os.path.abspath(os.curdir))
 if if_run_main_list_creator:    
     main_list_creator(list_path)
 if if_run_remove_list:
